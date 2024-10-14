@@ -1,0 +1,37 @@
+#adminHeader {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 25px;
+}
+
+#adminSearch {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.adminSearchImg {
+    float: left;
+    max-width: 10%;
+    max-height: 10%;
+}
+
+.daminUsrInfo ul {
+    list-style-type: none;
+    overflow: hidden;
+    padding: 0px;
+    margin: 0px;
+}
+
+.daminUsrInfo li {
+    float: left;
+}
+
+.adminUsrBio {
+}
+
+.adminSearcResult {
+    border: solid;
+}
+
