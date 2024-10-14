@@ -6,6 +6,7 @@ const model = {
         logo: null,
         page: 'mainView',
         usrId: '',
+        inView: '',
     },
 
     input: {
