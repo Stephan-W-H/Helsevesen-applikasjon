@@ -178,10 +178,11 @@ const model = {
                     }
                     ],
                     
-                    userInterests: [],
-                    adminViewResult: [],
+                  
                 }
             ],
+            userInterests: [],
+            adminViewResult: [],
         }
     },
 }
