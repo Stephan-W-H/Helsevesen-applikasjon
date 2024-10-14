@@ -1,7 +1,7 @@
 //
 //
 //
-adminView();
+//adminView();
 function adminView() {
 app.innerHTML = `
 <header id="adminHeader">
