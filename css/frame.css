@@ -3,7 +3,7 @@ main {
     margin: 50px;
     display: grid;
     grid-template-columns: 1fr 3fr 1fr;
-    grid-template-rows: 50px auto 70px;
+    grid-template-rows: 100px auto 70px;
     grid-template-areas:
         "topbar topbar topbar"
         "sidebar1 content sidebar2"
