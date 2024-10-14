@@ -1,0 +1,40 @@
+/* GRID Container */
+main {
+    margin: 50px;
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+    grid-template-rows: 50px auto 70px;
+    grid-template-areas:
+        "topbar topbar topbar"
+        "sidebar1 content sidebar2"
+        "footer footer footer"
+
+}
+
+/* Grid Items */
+header {
+    grid-area: topbar;
+    background-color: palegreen;
+}
+
+article {
+    grid-area: content;
+    background-color: antiquewhite;
+    height: 100vh;
+}
+
+aside { 
+    grid-area: sidebar1;
+    background-color: lightgray;
+}
+
+nav { 
+    grid-area: sidebar2;
+    background-color: lightgrey;
+}
+
+footer { 
+    grid-area: footer;
+    background-color: paleturquoise;
+}
+
