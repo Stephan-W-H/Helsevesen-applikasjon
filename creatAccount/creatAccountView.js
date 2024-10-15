@@ -1,7 +1,9 @@
 function creatAccountView() {
     model.app.inView = /*HTML*/ 
     `
-    <div>
+    <div class="topText">Registrering</div>
+    <div class="accountRegBox">
+    <div class="containerDiv">
     <label for="firstName">Fornavn:</label>
     <input id="firstName" type="text" onchange="">
 
@@ -17,7 +19,7 @@ function creatAccountView() {
     
 
     <label for="E-mail">Epost:</label>
-    <input id="E-mail" type="email" placeholder="abc@abc.com" onchange="">
+    <input id="E-mail" type="email" placeholder="abc@abc.com" onchange=""><br>
 
     <label for="city">By:</label>
     <input id="city" type="text" onchange="">
@@ -29,8 +31,10 @@ function creatAccountView() {
     <input id="age" type="text" onchange="">
 
     <label for="ethnicity">Etnisitet:</label>
-    <input id="ethnicity" type="text" onchange="">
+    <input id="ethnicity" type="text" onchange=""><br>
+    </div>
 
+    <div class="containerDiv">
     <label for="licens">Førerkort Klasser:</label>
     <select id="licens" onchange="">
     <option value="M"> M Moped</option>
@@ -46,12 +50,13 @@ function creatAccountView() {
     <label for="hobby">Hobbyer:</label>
     <select id="hobby" onchange="">
     <option></option>
+    ${creatHobbyOptions()}
     </select>
     <label for="hobbyInput">Eller Skriv Her</label>
-    <input id="hobbyinput" type="text" onchange="">
+    <input id="hobbyinput" type="text" onchange="addHobby(this.value)">
 
     <label for="education">Utdanning/Kurs</label>
-    <input id="education" type="text" onchange="">
+    <input id="education" type="text" onchange=""><br>
 
     <label for="availebilety">Tilgjengelighet</label>
     <input id="availebilety" type="date" onchange="">
@@ -63,8 +68,10 @@ function creatAccountView() {
     <input id="pic" type="text" onchange="">
 
     <label for="travelTime">Reisetid:</label>
-    <input id="travelTime" type="number" placeholder="hele timer" onchange="">
+    <input id="travelTime" type="number" placeholder="hele timer" onchange=""><br>
+    </div>
 </div>
 
     `
+    updateView()
 }

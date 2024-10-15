@@ -181,7 +181,7 @@ const model = {
                   
                 }
             ],
-            userInterests: [],
+            userInterests: ['strikking', 'hekling', 'sykling', 'jogging'],
             adminViewResult: [],
         }
     },
