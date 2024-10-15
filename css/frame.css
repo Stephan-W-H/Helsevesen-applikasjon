@@ -7,8 +7,13 @@ main {
     margin: 0;
     padding: 0;
     display: grid;
+<<<<<<< HEAD
     grid-template-columns: 1fr 6fr 1fr;
     grid-template-rows: 100px auto 70px;
+=======
+    grid-template-columns: 1fr 3fr 1fr;
+    grid-template-rows: 80px auto 70px;
+>>>>>>> f0f484c (Initi)
     grid-template-areas:
         "topbar topbar topbar"
         "sidebar1 content sidebar2"
