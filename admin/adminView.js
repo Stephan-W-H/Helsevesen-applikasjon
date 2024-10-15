@@ -1,7 +1,7 @@
 //
 //
 //
-adminView();
+//adminView();
 function adminView() {
     model.app.inView = `
 <div id="adminMain">
