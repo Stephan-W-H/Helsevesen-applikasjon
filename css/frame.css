@@ -4,8 +4,6 @@ body {
 }
 
 main {
-    margin: 0;
-    padding: 0;
     display: grid;
     grid-template-columns: 1fr 6fr 1fr;
     grid-template-rows: 100px auto 70px;
