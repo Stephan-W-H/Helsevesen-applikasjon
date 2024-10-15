@@ -3,21 +3,18 @@
 //
 adminView();
 function adminView() {
-    app.innerHTML = `
-<header id="adminHeader">
-    <p>Admin Side</p>
-</header>
-<main id="adminMain">
+    model.app.inView = `
+<div id="adminMain">
     <form id="adminSearch">
         <label for="search"></label>
         <input id="search" placeholder="Søk her">
     </form>
     <br><br>
     <div id="adminSearcResult" class="adminSearcResult">
+        <div id="adminUsrInfo" class="adminUsrInfo">
         <div>
             <img src="image/bilde1.jpg" id="adminSearchImg" class="adminSearchImg">
         </div>
-        <div id="daminUsrInfo" class="daminUsrInfo">
             <ul>
                 <li>Navn:</li>
                 <li>Kontakt info:</li>
@@ -37,16 +34,18 @@ function adminView() {
     </div>
     <br>
     <div id="adminSearcResult" class="adminSearcResult">
+<div>
+        <div id="adminUsrInfo" class="adminUsrInfo">
         <div>
             <img src="image/bilde2.jpg" id="adminSearchImg" class="adminSearchImg">
         </div>
-        <div id="daminUsrInfo" class="daminUsrInfo">
             <ul>
                 <li>Navn:</li>
                 <li>Kontakt info:</li>
                 <li>Sted:</li>
             </ul>
         </div>
+</div>
         <hr>
         <div id="adminUsrBio" class="adminUsrBio">
             <p>
@@ -58,6 +57,7 @@ function adminView() {
             </p>
         </div>
     </div>
-</main>
+</div>
 `;
+    updateView();
 }

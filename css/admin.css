@@ -1,37 +1,53 @@
-#adminHeader {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 25px;
-}
+
+
 
 #adminSearch {
     display: flex;
     justify-content: center;
     align-items: center;
+    margin: 20px 0;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #fff;
 }
 
 .adminSearchImg {
-    float: left;
-    max-width: 10%;
-    max-height: 10%;
+    width: 100px;
+    height: 100px;
+    margin: 20px;
+    border: solid;
+    border-color: red;
+    border-width: 10px;
 }
 
-.daminUsrInfo ul {
-    list-style-type: none;
-    overflow: hidden;
-    padding: 0px;
-    margin: 0px;
+.adminUsrInfo {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 20px;
+    margin: 20px;
 }
 
-.daminUsrInfo li {
-    float: left;
-}
-
-.adminUsrBio {
+.adminUsrInfo li {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
 }
 
 .adminSearcResult {
-    border: solid;
+    border: 1px solid #ddd;
+    padding: 10px;
+    margin: 20px;
+    border-radius: 8px;
+    background-color: #f9f9f9;
 }
 
+#adminMain {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 20px;
+}
