@@ -8,9 +8,12 @@ main {
     padding: 0;
     display: grid;
 <<<<<<< HEAD
+<<<<<<< HEAD
     grid-template-columns: 1fr 3fr 1fr;
     grid-template-rows: 80px auto 70px;
 =======
+=======
+>>>>>>> 24b3380 (Css :D)
     grid-template-columns: 1fr 6fr 1fr;
     grid-template-rows: 100px auto 70px;
 >>>>>>> 24b3380 (Css :D)
