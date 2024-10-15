@@ -1,9 +1,9 @@
 //
 //
 //
-//adminView();
+adminView();
 function adminView() {
-app.innerHTML = `
+    app.innerHTML = `
 <header id="adminHeader">
     <p>Admin Side</p>
 </header>
