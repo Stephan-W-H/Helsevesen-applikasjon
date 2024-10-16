@@ -19,7 +19,7 @@ function creatAccountView() {
     
 
     <label for="E-mail">Epost:</label>
-    <input id="E-mail" type="email" placeholder="abc@abc.com" onchange=""><br>
+    <input id="E-mail" type="email" placeholder="abc@abc.com" onchange="getInputEmail(this.value)"><br>
 
     <label for="city">By:</label>
     <input id="city" type="text" onchange="">
