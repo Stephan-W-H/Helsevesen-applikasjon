@@ -14,11 +14,11 @@
     width: 400px;
     height: 200px;
     background-color: antiquewhite;
-    border-radius: 5px;
+    border-radius: 8px;
 }
 
 .inputStyle {
-   gap: 10px; 
+
 }
 
 .buttonStyle {
