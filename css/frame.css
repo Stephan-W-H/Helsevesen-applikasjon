@@ -22,7 +22,6 @@ header {
 
 article {
     grid-area: content;
-    background-color: antiquewhite;
     height: 100vh;
     overflow-y: auto;
 }
