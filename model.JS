@@ -1,12 +1,19 @@
-const app = document.getElementById('app');
+const app = document.getElementById("app");
 
 const model = {
-    app: { 
-        pages: ['mainView','loginView','registrationView','userView','adminView','adminUserView',],
+    app: {
+        pages: [
+            "mainView",
+            "loginView",
+            "registrationView",
+            "userView",
+            "adminView",
+            "adminUserView",
+        ],
         logo: null,
-        page: 'mainView',
-        usrId: '',
-        inView: '',
+        page: "mainView",
+        usrId: "",
+        inView: "",
     },
 
     input: {
@@ -29,14 +36,14 @@ const model = {
             info: null,
             picture: null,
         },
-    
+
         login: {
             username: null,
             password: null,
-         },
+        },
 
         searchField: {
-            place: null,          
+            place: null,
             fname: null,
             lname: null,
             age: null,
@@ -53,32 +60,29 @@ const model = {
             phone: null,
         },
 
-        autogen: {  // automatisk id produsering
+        autogen: {
+            // automatisk id produsering
             id: 2,
             noteId: 0,
             adminId: 0,
-        }
-
-        
+        },
     },
 
     data: {
         users: {
-            admin:[  
-                {  // høyeste form for admin privileger
-                id: 'A 123',
-                name: "admin",
-                password: "admin",
-                edit: true,
-                mission: true,
-                delete: true,
-                adminLVL: 1,
-            },
-     
-                
+            admin: [
+                {
+                    // høyeste form for admin privileger
+                    id: "A 123",
+                    name: "admin",
+                    password: "admin",
+                    edit: true,
+                    mission: true,
+                    delete: true,
+                    adminLVL: 1,
+                },
 
-          
-                { 
+                {
                     id: 231,
                     name: "admin2",
                     password: "admin2",
@@ -87,7 +91,6 @@ const model = {
                     delete: false,
                     adminLVL: 2,
                 },
-            
 
                 {
                     id: 321,
@@ -99,92 +102,85 @@ const model = {
                     adminLVL: 3,
                 },
             ],
-       
-        
-    
 
             // usr = user
-            usr:[
-                
+            usr: [
                 {
                     id: 1232323,
-                    fname: "usrFname", // first name
-                    lname: "ursLname", // last name
-                    password: "usrPassword",
-                    gender: "male/female",
-                    email: "name@mail.no",
+                    fname: "Ola", // first name
+                    lname: "Olsen", // last name
+                    password: "123",
+                    gender: "Mann",
+                    email: "ola@mail.no",
                     phone: "12312323",
-                    age: 420,
+                    age: 55,
                     ethnicity: "Norsk",
-                    driverLicence: ['A', 'B','C', 'D'],
+                    driverLicence: ["A", "B", "C", "D"],
                     place: "Moss",
-                    interest: ['Strikking', 'bingo', 'bake kake'],
+                    interest: ["Strikking", "bingo", "bake kake"],
                     exp: "Dr. Grad i strikking",
-                    date: ['dato'],
-                   // time: [{startTime: 0, endTime: 0,}],
+                    date: ["dato"],
+                    // time: [{startTime: 0, endTime: 0,}],
                     travel: "Så langt som mulig",
                     info: "Jeg er veldig smart",
-                    picture: "path/to/picture.png",
+                    picture: "image/bilde1.jpg",
                     mission: [
                         {
-                            patientId: '',
-                            location: '',
-                            duration: '',
-                            information: '',
-                    }
+                            patientId: "",
+                            location: "",
+                            duration: "",
+                            information: "",
+                        },
                     ],
                     note: [
                         {
                             noteId: null,
                             adminUsername: null,
                             noteText: null,
-                        }
-                         ],
+                        },
+                    ],
                 },
 
                 {
                     id: 2323232,
-                    fname: null, // first name
-                    lname: null, // last name
+                    fname: "Petra", // first name
+                    lname: "Gundersen", // last name
                     password: 123,
-                    gender: null,
-                    email: 'abc@123.no',
-                    phone: null,
-                    age: null,
-                    ethnicity: null,
+                    gender: "Kvinne",
+                    email: "abc@123.no",
+                    phone: "32111321",
+                    age: "33",
+                    ethnicity: "Svensk",
                     driverLicence: null,
-                    place: null,
+                    place: "Halden",
                     interest: null,
                     exp: null,
                     time: null,
                     travel: null,
                     info: null,
-                    picture: null,
+                    picture: "image/bilde2.jpg",
                     mission: null,
-                    note: [                        
+                    note: [
                         {
-                        noteId: null,
-                        adminUsername: null,
-                        noteText: null,
-                    }],
+                            noteId: null,
+                            adminUsername: null,
+                            noteText: null,
+                        },
+                    ],
 
                     mission: [
                         {
                             userId: [],
-                            patientId: '',
-                            location: '',
-                            duration: '',
-                            information: '',
-                    }
+                            patientId: "",
+                            location: "",
+                            duration: "",
+                            information: "",
+                        },
                     ],
-                    
-                  
-                }
+                },
             ],
-            userInterests: ['strikking', 'hekling', 'sykling', 'jogging'],
+            userInterests: ["strikking", "hekling", "sykling", "jogging"],
             adminViewResult: [],
-        }
+        },
     },
-}
-
-
+};

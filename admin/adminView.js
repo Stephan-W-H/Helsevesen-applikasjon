@@ -1,7 +1,7 @@
 //
 //
 //
-//adminView();
+adminView();
 function adminView() {
     model.app.inView = `
 <div id="adminMain">
@@ -10,15 +10,15 @@ function adminView() {
         <input id="search" placeholder="Søk her">
     </form>
     <br><br>
-    <div id="adminSearcResult" class="adminSearcResult">
+    <div id="adminSearcResult" class="adminSearcResult" onclick="adminViewSecondPage()">
         <div id="adminUsrInfo" class="adminUsrInfo">
         <div>
-            <img src="image/bilde1.jpg" id="adminSearchImg" class="adminSearchImg">
+            <img src="${model.data.users.usr[0].picture}" id="adminSearchImg" class="adminSearchImg">
         </div>
             <ul>
-                <li>Navn:</li>
-                <li>Kontakt info:</li>
-                <li>Sted:</li>
+                <li>Navn: ${model.data.users.usr[0].fname}</li>
+                <li>Kontakt info: ${model.data.users.usr[0].phone}</li>
+                <li>Sted: ${model.data.users.usr[0].place}</li>
             </ul>
         </div>
         <hr>
@@ -33,16 +33,16 @@ function adminView() {
         </div>
     </div>
     <br>
-    <div id="adminSearcResult" class="adminSearcResult">
+    <div id="adminSearcResult" class="adminSearcResult" onclick="adminViewSecondPage()">
 <div>
         <div id="adminUsrInfo" class="adminUsrInfo">
         <div>
-            <img src="image/bilde2.jpg" id="adminSearchImg" class="adminSearchImg">
+            <img src="${model.data.users.usr[1].picture}" id="adminSearchImg" class="adminSearchImg">
         </div>
             <ul>
-                <li>Navn:</li>
-                <li>Kontakt info:</li>
-                <li>Sted:</li>
+                <li>Navn: ${model.data.users.usr[1].fname}</li>
+                <li>Kontakt info: ${model.data.users.usr[1].phone}</li>
+                <li>Sted: ${model.data.users.usr[1].place}</li>
             </ul>
         </div>
 </div>

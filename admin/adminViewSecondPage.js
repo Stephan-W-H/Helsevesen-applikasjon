@@ -4,14 +4,11 @@
 //adminViewSecondPage();
 function adminViewSecondPage() {
     app.innerHTML = `
-<header>
-    Admin side 2
-</header>
-<main>
-    <div>
+<div>
+    <div id="daminImgTwo">
         <img>
     </div>
-    <div>
+    <div id="adminList">
         <ul>
             <li>Fornavn:</li>
             <li>Etternavn:</li>
@@ -20,7 +17,7 @@ function adminViewSecondPage() {
             <li>Aresse:</li>
         </ul>
     </div>
-    <div>
+    <div id="adminInfoTwo">
         <p>
             Lorem ipsum dolor sit amet, consectetuer adipiscing elit.  Donec hendrerit tempor tellus.<br>
             Donec pretium posuere tellus.  Proin quam nisl, tincidunt et, mattis eget, convallis nec, purus.<br>
@@ -33,15 +30,15 @@ function adminViewSecondPage() {
             Cras placerat accumsan nulla.  Nullam rutrum.  Nam vestibulum accumsan nisl.<br>
         </p>
     </div>
-    <div>
+    <div id="adminNotes">
         Admin notater kommer her!
     </div>
-    <div>
+    <div id="adminBtn">
         <button>Slett bruker</button>
         <button>Rediger</button>
         <button>Oppdrag</button>
         <button>Lag et notat</button>
     </div>
-</main>
+</div>
 `;
 }
