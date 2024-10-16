@@ -10,10 +10,12 @@
     margin: 30px;
     border-radius: 4px;
     padding: 20px;
-    width: 2%;
+    width: 4%;
     background-color: grey;
     
 }
+.headerBtn:hover {opacity: 80%;}
+.headerBtn:active {opacity: 50%;}
 
 .footer {
     position: absolute;

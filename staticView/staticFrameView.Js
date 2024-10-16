@@ -24,6 +24,7 @@ function homeFunction()
     pageSwitch()  
 }
 
+
 function pageSwitch() 
 {
     let p = model.app.page

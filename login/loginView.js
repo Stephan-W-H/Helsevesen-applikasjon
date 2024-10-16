@@ -1,4 +1,5 @@
 function loginView() {
+    model.app.page = 'loginView'
     model.app.inView = /*HTML*/`
 
     <div class="loginContainer">
@@ -17,5 +18,5 @@ function loginView() {
     </div>
         <button class="buttonStyle" onclick="">Log in</button>
     `;
-    updateView()
+    updateView();
 }
