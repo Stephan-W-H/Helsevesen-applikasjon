@@ -1,15 +1,24 @@
 .loginContainer {
+    margin-top: 100px;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
 }
 
-.loginStyle {
-
-    
+.loginBox {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 400px;
+    height: 200px;
+    background-color: antiquewhite;
+    border-radius: 5px;
+}
 
 .inputStyle {
-
+   gap: 10px; 
 }
 
 .buttonStyle {
