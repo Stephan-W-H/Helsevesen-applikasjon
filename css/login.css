@@ -1,9 +1,11 @@
 .loginContainer {
-    margin-top: 100px;
+    margin: auto;
+    min-height: 40vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    font-family: sans-serif;
 }
 
 .loginBox {
@@ -15,6 +17,10 @@
     height: 200px;
     background-color: antiquewhite;
     border-radius: 8px;
+}
+
+.loginHeader {
+    
 }
 
 .inputStyle {

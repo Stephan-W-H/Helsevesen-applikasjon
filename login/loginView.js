@@ -4,7 +4,7 @@ function loginView() {
 
     <div class="loginContainer">
         <div class="loginBox">
-            <h2>Log in</h2>
+            <div class="loginHeader">Log in</div>
             
             <div class= "inputStyle">
                 <label for="email">Email</label>
