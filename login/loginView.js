@@ -8,12 +8,12 @@ function loginView() {
             
             <div class= "inputStyle">
                 <label for="email">Email</label>
-                <input id="email" type="email" onchange="" placeholder="Email"> 
+                <input id="email" type="email" onchange=""> 
             </div>
 
             <div class= "inputStyle">
                 <label for="pass">Password</label>
-                <input id="pass" type="password" onchange="" placeholder="Password"> 
+                <input id="pass" type="password" onchange=""> 
             </div>
                 
             <button onclick="">Log in</button>
