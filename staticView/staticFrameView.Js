@@ -5,7 +5,7 @@ function updateView() {
     app.innerHTML = /*HTML*/ `
     <main>
 
-        <header class="header">Header</header>
+        <header onclick="homeFunction()" class="header">Header</header>
         
         <article class="main">${model.app.inView}</article>
         <aside>Sidebar1</aside>
@@ -16,6 +16,12 @@ function updateView() {
     </main>
 `;
 
+}
+
+function homeFunction() 
+{
+    model.app.page = 'mainView'
+    pageSwitch()  
 }
 
 function pageSwitch() 
