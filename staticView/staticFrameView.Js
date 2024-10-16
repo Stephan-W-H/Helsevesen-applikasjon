@@ -1,5 +1,7 @@
-updateView();
+updateView()
+pageSwitch()
 function updateView() {
+    
     app.innerHTML = /*HTML*/ `
     <main>
 
@@ -13,4 +15,33 @@ function updateView() {
         
     </main>
 `;
+
+}
+
+function pageSwitch() 
+{
+    let p = model.app.page
+    switch(p)
+    {
+        case 'mainView':
+            mainView();
+        break;
+        case 'loginView':
+            loginView()
+            break;
+        case 'registrationView':
+            creatAccountView()
+            break;
+        case 'userView':
+            userView()
+            break;
+        case 'adminView':
+            adminView()
+            break;
+        case 'adminUserView':
+            adminUserView()
+            break;
+    }
+    
+
 }
