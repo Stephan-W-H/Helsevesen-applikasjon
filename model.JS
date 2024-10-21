@@ -127,6 +127,7 @@ const model = {
                     travel: "Så langt som mulig",
                     info: "Jeg er veldig smart",
                     picture: "image/bilde1.jpg",
+                    missionStatus: "Er ledig", // maybe, maybe not???
                     mission: [
                         {
                             patientId: "",
@@ -160,8 +161,9 @@ const model = {
                     exp: null,
                     time: null,
                     travel: null,
-                    info: null,
+                    info: "Jeg liker å bake kake",
                     picture: "image/bilde2.jpg",
+                    missionStatus: "Er på oppdrag", // maybe, maybe not???
                     mission: null,
                     note: [
                         {
