@@ -186,6 +186,26 @@ const model = {
             ],
             userInterests: ["strikking", "hekling", "sykling", "jogging"],
             adminViewResult: [],
+            adminSeconPage: {
+                id: null,
+                fname: null, // first name
+                lname: null, // last name
+                gender: null,
+                email: null,
+                phone: null,
+                age: null,
+                ethnicity: null,
+                driverLicence: null,
+                place: null,
+                interest: null,
+                exp: null,
+                time: null,
+                travel: null,
+                info: null,
+                picture: null,
+                missionStatus: null, // maybe, maybe not???
+                mission: null,
+            },
         },
     },
 };

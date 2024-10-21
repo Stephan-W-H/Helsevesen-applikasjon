@@ -5,10 +5,11 @@ function adminViewController() {
     let html;
     for (let i = 0; i < model.data.users.usr.length; i++) {
         html += `
-        <div id="adminSearcResult" class="adminSearcResult" onclick="adminViewSecondPage()">
+        <div id="adminSearcResult" class="adminSearcResult" onclick="adminStoreUsrData(${i})">
             <div>
-                <img src="${model.data.users.usr[i].picture}" id="adminSearchImg" class="adminSearchImg">
+                <img src="${model.data.users.usr[i].picture}" id="adminSearchImg" class="adminSearchImg" onclick="adminStoreUsrData(${i})">
                 <ul>
+                    <li>ID: ${model.data.users.usr[i].id}</li>
                     <li>Navn: ${model.data.users.usr[i].fname}</li>
                     <li>Telefon: ${model.data.users.usr[i].phone}</li>
                     <li>Setd: ${model.data.users.usr[i].place}</li>
@@ -24,4 +25,10 @@ function adminViewController() {
         `;
     }
     return html;
+}
+
+function adminStoreUsrData(storedData) {
+    model.data.users.adminSeconPage = model.data.users.usr[storedData];
+
+    adminViewSecondPage();
 }
