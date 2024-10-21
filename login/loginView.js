@@ -2,21 +2,23 @@ function loginView() {
     model.app.page = 'loginView'
     model.app.inView = /*HTML*/`
 
-    <div class="loginContainer">
-        <div class="loginBox">
-            <div class="loginHeader">Log in</div>
-            
-            <div class= "inputStyle">
-                <label for="email">Email</label>
-                <input id="email" type="email" onchange=""> 
-            </div>
-
-            <div class= "inputStyle">
-                <label for="pass">Password</label>
-                <input id="pass" type="password" onchange=""> 
-            </div>
+    <div class="bodyContainer">
+        <div class="container">
+            <form>
+                <h2>Log in</h2>
                 
-            <button onclick="">Log in</button>
+                <div class= "formGroup">
+                    <label for="email">Email</label>
+                    <input id="email" type="email" class="inputField" onchange=""> 
+                </div>
+
+                <div class= "formGroup">
+                    <label for="pass">Password</label>
+                    <input id="pass" type="password" class="inputField" onchange=""> 
+                </div>
+                    
+                <button class="btn" onclick="">Log in</button>
+            </form>    
         </div>
     </div>
     `;
