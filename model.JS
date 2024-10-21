@@ -75,6 +75,7 @@ const model = {
                     // høyeste form for admin privileger
                     id: "A 123",
                     name: "admin",
+                    email: "admin@mail.no",
                     password: "admin",
                     edit: true,
                     mission: true,
@@ -85,6 +86,7 @@ const model = {
                 {
                     id: 231,
                     name: "admin2",
+                    email: "admin2@mail.no",
                     password: "admin2",
                     edit: true,
                     mission: true,
@@ -95,6 +97,7 @@ const model = {
                 {
                     id: 321,
                     name: "admin3",
+                    email: "admin3@mail.no",
                     password: "admin3",
                     edit: false,
                     mission: true,

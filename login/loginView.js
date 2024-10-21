@@ -17,7 +17,7 @@ function loginView() {
                     <input id="pass" type="password" class="inputField" onchange=""> 
                 </div>
                     
-                <button class="btn" onclick="">Log in</button>
+                <button class="btn" onclick="loginValidation()">Log in</button>
             </form>    
         </div>
     </div>
