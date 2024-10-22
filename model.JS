@@ -205,6 +205,11 @@ const model = {
                 picture: null,
                 missionStatus: null, // maybe, maybe not???
                 mission: null,
+                note: {
+                    noteId: [],
+                    adminUsername: [],
+                    noteText: [],
+                },
             },
         },
     },
