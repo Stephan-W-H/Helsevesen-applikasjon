@@ -1,7 +1,7 @@
-function profileView() {
+function wprofileView() {
     let html = "";
     for (let i = 0; i < model.data.users.usr.length; i++) {
-        if (model.data.users.usr[i].id == model.app.usrId) {
+        if (model.app.usrId === model.data.users.usr[i].id) {
             let p = model.data.users.usr[i];
 
             html = /*HTML*/ `

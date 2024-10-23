@@ -12,7 +12,7 @@ const model = {
         ],
         logo: null,
         page: "mainView",
-        usrId: "",
+        usrId: 1999,
         inView: "",
     },
 
@@ -65,6 +65,9 @@ const model = {
             id: 2,
             noteId: 0,
             adminId: 0,
+        },
+        adminInPut: {
+            note: [],
         },
     },
 
@@ -134,6 +137,13 @@ const model = {
                             location: "",
                             duration: "",
                             information: "",
+                        },
+                    ],
+                    note: [
+                        {
+                            noteId: null,
+                            adminUsername: null,
+                            noteText: null,
                         },
                     ],
                 },
@@ -234,11 +244,13 @@ const model = {
                 picture: null,
                 missionStatus: null, // maybe, maybe not???
                 mission: null,
-                note: {
-                    noteId: [],
-                    adminUsername: [],
-                    noteText: [],
-                },
+                note: [
+                    {
+                        noteId: [],
+                        adminUsername: [],
+                        noteText: [],
+                    },
+                ],
             },
         },
     },

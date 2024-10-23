@@ -1,8 +1,7 @@
-function profileView(){
-    model.app.pages = 'userView';
+function profileView() {
+    //model.app.pages = "userView";
     model.app.inView = /*HTML*/ `
-    ${profileView()}
-    `
+    <div>${wprofileView()}</div>
+    `;
     updateView();
 }
-    
