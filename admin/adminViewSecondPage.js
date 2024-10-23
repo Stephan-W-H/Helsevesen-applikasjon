@@ -12,7 +12,7 @@ function adminViewSecondPage() {
            <button>Slett Bruker</button>
            <button>Rediger</button>
            <button>Opdrag</button>
-           <button>Lag et notat</button>
+           <button onclick="adminNoteView()">Lag et notat</button>
            <button onclick="adminView()">Tilbake til forige side</button>
         </div>
     </div>
