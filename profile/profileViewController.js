@@ -1,11 +1,10 @@
-profileView(){
-    let html = '';
-    for (let i=0; i < model.data.users.usr.length; i++){
-        if(model.data.users.usr[i].id == model.app.usrId){
+function profileView() {
+    let html = "";
+    for (let i = 0; i < model.data.users.usr.length; i++) {
+        if (model.data.users.usr[i].id == model.app.usrId) {
             let p = model.data.users.usr[i];
-            
 
-            html = /*HTML*/`
+            html = /*HTML*/ `
             <div class="header">
             <div>${p.fname}
             <div>${p.lname}
@@ -29,9 +28,8 @@ profileView(){
         <div>Tilgjengelighet</div>
         ${p.date}
         </div>
-            `
+            `;
         }
     }
     return html;
-
 }
