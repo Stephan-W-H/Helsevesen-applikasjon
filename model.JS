@@ -12,7 +12,11 @@ const model = {
         ],
         logo: null,
         page: "mainView",
+<<<<<<< Updated upstream
         usrId: 1999,
+=======
+        usrId:  0,
+>>>>>>> Stashed changes
         inView: "",
     },
 
