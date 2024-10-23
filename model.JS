@@ -109,6 +109,35 @@ const model = {
             // usr = user
             usr: [
                 {
+                    id: 1999,
+                    fname: "", // first name
+                    lname: "", // last name
+                    password: 123,
+                    gender: "Mann",
+                    email: "",
+                    phone: "",
+                    age: 38,
+                    ethnicity: "Norsk",
+                    driverLicence: ["A", "B", "C", "D"],
+                    place: "Molde",
+                    interest: ["Strikking", "bingo", "bake kake"],
+                    exp: "Dr grad i bigmac",
+                    date: ["dato"],
+                    // time: [{startTime: 0, endTime: 0,}],
+                    travel: "Så langt som mulig",
+                    info: "Jeg er veldig smart",
+                    picture: "image/bilde1.jpg",
+                    missionStatus: "Er ledig", // maybe, maybe not???
+                    mission: [
+                        {
+                            patientId: "",
+                            location: "",
+                            duration: "",
+                            information: "",
+                        },
+                    ],
+                },
+                {
                     id: 1232323,
                     fname: "Ola", // first name
                     lname: "Olsen", // last name

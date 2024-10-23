@@ -1,7 +1,7 @@
 
 function mainView(){
 model.app.inView = /*HTML*/ `
-    <img src="helsevesen logo til prosjekt.png">
+    <img class="imageLogo" src="image/helsevesen logo til prosjekt.png">
     <div class="header">Home</div>
     <div onclick=" loginView()" class="headerBtn">Login</div>
     <div onclick="creatAccountView()" class="footer">Registrer Deg Nå!</div>
