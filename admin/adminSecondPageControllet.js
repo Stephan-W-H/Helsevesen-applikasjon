@@ -23,6 +23,11 @@ function adminSecondPageController() {
         <p>Information: ${user.info}</p>
         <p>Oppdrag status: ${user.missionstatus}</p>
         <p>Oppdrag: ${user.mission}</p>
+        <h2>Notater: </h2>
+        <p>Notat id: ${user.note.noteId}</p>
+        <p>Notat skrevet av: ${user.note.adminUsername}</p>
+        <p>Notat: ${user.note.noteText}</p>
         `;
+        //<div>${produceNote()}</div>
     return html;
 }

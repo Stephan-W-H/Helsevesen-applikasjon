@@ -250,9 +250,9 @@ const model = {
                 mission: null,
                 note: [
                     {
-                        noteId: [],
-                        adminUsername: [],
-                        noteText: [],
+                        noteId: null,
+                        adminUsername: null,
+                        noteText: null,
                     },
                 ],
             },
