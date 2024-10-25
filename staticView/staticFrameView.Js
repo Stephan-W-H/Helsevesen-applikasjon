@@ -34,7 +34,7 @@ function pageSwitch() {
             creatAccountView();
             break;
         case "userView":
-            userView();
+            profileView();
             break;
         case "adminView":
             adminView();

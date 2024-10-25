@@ -1,14 +1,7 @@
-<<<<<<< Updated upstream
 function wprofileView() {
     let html = "";
     for (let i = 0; i < model.data.users.usr.length; i++) {
         if (model.app.usrId === model.data.users.usr[i].id) {
-=======
-function profileViewController(){
-    let html = '';
-    for (let i=0; i < model.data.users.usr.length; i++){
-            if(model.app.usrId === model.data.users.usr[i].id){
->>>>>>> Stashed changes
             let p = model.data.users.usr[i];
 
             html = /*HTML*/ `
@@ -36,17 +29,7 @@ function profileViewController(){
         ${p.date}
         </div>
             `;
-<<<<<<< Updated upstream
         }
     }
     return html;
 }
-=======
-        
-    }
-    
-}
-return html;
-    
-}
->>>>>>> Stashed changes
