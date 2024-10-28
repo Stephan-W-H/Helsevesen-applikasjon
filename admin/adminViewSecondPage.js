@@ -30,7 +30,7 @@ function adminSecondPagePrint() {
         <p>Notat skrevet av: ${user.note.adminUsername}</p>
         <p>Notat: ${user.note.noteText}</p>
         `;
-    //<div>${produceNote()}</div>
+
     return html;
 }
 
@@ -41,7 +41,7 @@ function adminViewSecondPage() {
         ${adminSecondPagePrint()}
         <hr><br>
         <div>
-           <button>Slett Bruker</button>
+           <button onclick="adminDeleteUserView()">Slett Bruker</button>
            <button>Rediger</button>
            <button>Opdrag</button>
            <button onclick="adminNoteView()">Lag et notat</button>

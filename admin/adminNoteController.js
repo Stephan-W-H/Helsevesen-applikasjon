@@ -17,10 +17,6 @@ function adminNoteController(event) {
         model.data.users.usr[i].note.adminUsername.push(
             model.input.adminInPut.noteAuthor,
         );
-        //model.data.users.usr[i].note.noteText = model.input.adminInPut.note;
-        //model.data.users.usr[i].note.noteId = model.input.adminInPut.noteId;
-        //model.data.users.usr[i].note.adminUsername =
-        //model.input.adminInPut.noteAuthor;
         console.log(model.data.users.usr[i].note);
     }
 

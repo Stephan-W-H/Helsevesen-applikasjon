@@ -13,7 +13,7 @@ const model = {
         logo: null,
         page: "mainView",
         usrId: "",
-        usrId: 1999,
+        //usrId: 1999,
         inView: "",
     },
 
@@ -71,6 +71,7 @@ const model = {
             noteId: "",
             note: "",
             noteAuthor: "",
+            selectedUsrId: "",
         },
     },
 
