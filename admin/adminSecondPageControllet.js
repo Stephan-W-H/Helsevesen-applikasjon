@@ -2,32 +2,32 @@
 //
 //
 function adminSecondPageController() {
-    const user = model.data.users.adminSeconPage;
+    const usr = model.data.users.adminSeconPage;
+    // usr.picture = null;
+    // usr.id = null;
+    // usr.fname = null;
+    // usr.lname = null;
+    // usr.gender = null;
+    // usr.email = null;
+    // usr.phone = null;
+    // usr.age = null;
+    // usr.ethnicity = null;
+    // usr.driverLicence = null;
+    // usr.place = null;
+    // usr.interest = null;
+    // usr.exp = null;
+    // usr.time = null;
+    // usr.travel = null;
+    // usr.info = null;
+    // usr.missionStatus = null;
+    // usr.mission = null;
+    usr.note.adminUsername = [];
+    usr.note.noteId = [];
+    usr.note.noteText = [];
+}
 
-    let html = `
-        <img src="${user.picture}">
-        <p>Bruker ID: ${user.id}</p>
-        <p>For navn: ${user.fname}</p>
-        <p>Etter navn: ${user.lname}</p>
-        <p>Kjønn: ${user.gender}</p>
-        <p>E-post: ${user.email}</p>
-        <p>Telefon: ${user.phone}</p>
-        <p>Alder: ${user.age}</p>
-        <p>Etnisitet: ${user.ethnicity}</p>
-        <p>Fører kort: ${user.driverlicence}</p>
-        <p>Sted: ${user.place}</p>
-        <p>Iteresser: ${user.interest}</p>
-        <p>Erfaring: ${user.exp}</p>
-        <p>Tid: ${user.time}</p>
-        <p>Reise: ${user.travel}</p>
-        <p>Information: ${user.info}</p>
-        <p>Oppdrag status: ${user.missionstatus}</p>
-        <p>Oppdrag: ${user.mission}</p>
-        <h2>Notater: </h2>
-        <p>Notat id: ${user.note.noteId}</p>
-        <p>Notat skrevet av: ${user.note.adminUsername}</p>
-        <p>Notat: ${user.note.noteText}</p>
-        `;
-        //<div>${produceNote()}</div>
-    return html;
+function adminSwapPage() {
+    adminSecondPageController();
+    model.app.page = "adminView";
+    pageSwitch();
 }

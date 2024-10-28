@@ -13,6 +13,7 @@ const model = {
         logo: null,
         page: "mainView",
         usrId: "",
+        usrId: 1999,
         inView: "",
     },
 
@@ -67,7 +68,9 @@ const model = {
             adminId: 0,
         },
         adminInPut: {
-            note: [],
+            noteId: "",
+            note: "",
+            noteAuthor: "",
         },
     },
 
@@ -139,13 +142,11 @@ const model = {
                             information: "",
                         },
                     ],
-                    note: [
-                        {
-                            noteId: null,
-                            adminUsername: null,
-                            noteText: null,
-                        },
-                    ],
+                    note: {
+                        noteId: [],
+                        adminUsername: [],
+                        noteText: [],
+                    },
                 },
                 {
                     id: 1232323,
@@ -175,13 +176,11 @@ const model = {
                             information: "",
                         },
                     ],
-                    note: [
-                        {
-                            noteId: null,
-                            adminUsername: null,
-                            noteText: null,
-                        },
-                    ],
+                    note: {
+                        noteId: [],
+                        adminUsername: [],
+                        noteText: [],
+                    },
                 },
 
                 {
@@ -204,15 +203,11 @@ const model = {
                     picture: "image/bilde2.jpg",
                     missionStatus: "Er på oppdrag", // maybe, maybe not???
                     mission: null,
-                    note: [
-                        {
-                            noteId: null,
-                            adminUsername: null,
-                            noteText: null,
-                        },
-                    ],
-
-
+                    note: {
+                        noteId: [],
+                        adminUsername: [],
+                        noteText: [],
+                    },
                 },
             ],
             mission: [
@@ -245,13 +240,11 @@ const model = {
                 picture: null,
                 missionStatus: null, // maybe, maybe not???
                 mission: null,
-                note: [
-                    {
-                        noteId: null,
-                        adminUsername: null,
-                        noteText: null,
-                    },
-                ],
+                note: {
+                    noteId: [],
+                    adminUsername: [],
+                    noteText: [],
+                },
             },
         },
     },

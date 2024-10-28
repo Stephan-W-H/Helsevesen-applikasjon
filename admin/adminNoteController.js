@@ -1,33 +1,32 @@
 //
 //
 //
-function adminNoteController() {
+function adminNoteController(event) {
+    event.preventDefault();
+
     const notes = document.getElementById("adminNote").value;
-    model.input.adminInPut.note.push(notes);
-    const noteTitle = document.getElementById("adminNoteTitle");
-    const noteAuthor = document.getElementById("adminNoteUsr");
+    model.input.adminInPut.note = notes;
+    const noteTitle = document.getElementById("adminNoteTitle").value;
+    model.input.adminInPut.noteId = noteTitle;
+    const noteAuthor = document.getElementById("adminNoteUsr").value;
+    model.input.adminInPut.noteAuthor = noteAuthor;
 
     for (let i = 0; i < model.data.users.usr.length; i++) {
-        model.data.users.usr[i].note.noteText = model.input.adminInPut.note;
+        model.data.users.usr[i].note.noteText.push(model.input.adminInPut.note);
+        model.data.users.usr[i].note.noteId.push(model.input.adminInPut.noteId);
+        model.data.users.usr[i].note.adminUsername.push(
+            model.input.adminInPut.noteAuthor,
+        );
+        //model.data.users.usr[i].note.noteText = model.input.adminInPut.note;
+        //model.data.users.usr[i].note.noteId = model.input.adminInPut.noteId;
+        //model.data.users.usr[i].note.adminUsername =
+        //model.input.adminInPut.noteAuthor;
         console.log(model.data.users.usr[i].note);
     }
 
-    console.log(notes);
+    model.input.adminInPut.note = null;
+    model.input.adminInPut.noteAuthor = null;
+    model.input.adminInPut.noteId = null;
 
     updateView();
 }
-
-// function produceNote() {
-//     const html = "";
-//     const notes = model.data.users.adminSeconPage.note;
-//     for (let i = 0; i < notes.noteId.length; i++) {
-//         html += `
-//         <div>
-//         <p>Notat forfatter: ${notes[i].adminUsername}</p>
-//         <p>Notat titel: ${notes[i].noteId}</p>
-//         <p>Notat: ${notes[i].noteText}</p>
-//         </div>
-//         `;
-//     }
-//     return html;
-// }

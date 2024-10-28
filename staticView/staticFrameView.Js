@@ -38,6 +38,9 @@ function pageSwitch() {
         case "adminView":
             adminView();
             break;
+        case "adminSecondPage":
+            adminViewSecondPage();
+            break;
         case "adminUserView":
             adminUserView();
             break;

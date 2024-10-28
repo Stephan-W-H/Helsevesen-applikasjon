@@ -3,6 +3,7 @@ function mainView() {
     <img class="imageLogo" src="image/helsevesen logo til prosjekt.png">
     <div class="header">Home</div>
     <div onclick=" loginView()" class="headerBtn">Login</div>
+    <button onclick="profileView()">Bruker sin side</button>
     <div onclick="creatAccountView()" class="footer">Registrer Deg Nå!</div>
     <div class="mainDiv">
         Her kommer teksten for applikasjonen til helsevesnet...
