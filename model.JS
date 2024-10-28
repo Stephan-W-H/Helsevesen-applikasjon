@@ -15,6 +15,9 @@ const model = {
         usrId: "",
         //usrId: 1999,
         inView: "",
+        header: '',
+        leftSideMenu: '',
+        rightSideMunue: '',
     },
 
     input: {

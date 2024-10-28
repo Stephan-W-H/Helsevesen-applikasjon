@@ -4,13 +4,13 @@ function updateView() {
     app.innerHTML = /*HTML*/ `
     <main>
 
-        <header onclick="homeFunction()" class="header">Header</header>
+        <header onclick="homeFunction()" class="header">Header ${model.app.header}</header>
         
         <article class="main">${model.app.inView}</article>
-        <aside>Sidebar1</aside>
-        <nav>Sidebar2</nav>
+        <aside>Sidebar1 ${model.app.leftSideMenu}</aside>
+        <nav>Sidebar2 ${model.app.rightSideMenu}</nav>
 
-        <footer>Footer</footer>
+        <footer>Footer ${model.app.footer}</footer>
         
     </main>
 `;
