@@ -33,16 +33,16 @@ const model = {
             interest: null,
             exp: null,
             date: {
-                startTime: '',
-                stoptime: '',
+                startTime: "",
+                stoptime: "",
                 days: {
-                    sunday: '',
-                    saturday: '',
-                    friday: '',
-                    thursday: '',
-                    wedensday: '',
-                    thusday: '',
-                    monday: '',
+                    sunday: "",
+                    saturday: "",
+                    friday: "",
+                    thursday: "",
+                    wedensday: "",
+                    thusday: "",
+                    monday: "",
                 },
             },
             travel: null,
@@ -80,7 +80,9 @@ const model = {
             adminId: 0,
         },
         adminInPut: {
-            note: [],
+            noteId: "",
+            note: "",
+            noteAuthor: "",
         },
     },
 
@@ -139,8 +141,8 @@ const model = {
                     interest: ["Strikking", "bingo", "bake kake"],
                     exp: "Dr grad i bigmac",
                     date: {
-                        startTime: '',
-                        stoptime: '',
+                        startTime: "",
+                        stoptime: "",
                         days: [],
                     },
                     // time: [{startTime: 0, endTime: 0,}],
@@ -156,13 +158,11 @@ const model = {
                             information: "",
                         },
                     ],
-                    note: [
-                        {
-                            noteId: null,
-                            adminUsername: null,
-                            noteText: null,
-                        },
-                    ],
+                    note: {
+                        noteId: [],
+                        adminUsername: [],
+                        noteText: [],
+                    },
                 },
                 {
                     id: 1232323,
@@ -179,8 +179,8 @@ const model = {
                     interest: ["Strikking", "bingo", "bake kake"],
                     exp: "Dr. Grad i strikking",
                     date: {
-                        startTime: '',
-                        stoptime: '',
+                        startTime: "",
+                        stoptime: "",
                         days: [],
                     },
                     // time: [{startTime: 0, endTime: 0,}],
@@ -196,13 +196,11 @@ const model = {
                             information: "",
                         },
                     ],
-                    note: [
-                        {
-                            noteId: null,
-                            adminUsername: null,
-                            noteText: null,
-                        },
-                    ],
+                    note: {
+                        noteId: [],
+                        adminUsername: [],
+                        noteText: [],
+                    },
                 },
 
                 {
@@ -220,8 +218,8 @@ const model = {
                     interest: null,
                     exp: null,
                     date: {
-                        startTime: '',
-                        stoptime: '',
+                        startTime: "",
+                        stoptime: "",
                         days: [],
                     },
                     travel: null,
@@ -229,15 +227,11 @@ const model = {
                     picture: "image/bilde2.jpg",
                     missionStatus: "Er på oppdrag", // maybe, maybe not???
                     mission: null,
-                    note: [
-                        {
-                            noteId: null,
-                            adminUsername: null,
-                            noteText: null,
-                        },
-                    ],
-
-
+                    note: {
+                        noteId: [],
+                        adminUsername: [],
+                        noteText: [],
+                    },
                 },
             ],
             mission: [
@@ -270,13 +264,11 @@ const model = {
                 picture: null,
                 missionStatus: null, // maybe, maybe not???
                 mission: null,
-                note: [
-                    {
-                        noteId: null,
-                        adminUsername: null,
-                        noteText: null,
-                    },
-                ],
+                note: {
+                    noteId: [],
+                    adminUsername: [],
+                    noteText: [],
+                },
             },
         },
     },

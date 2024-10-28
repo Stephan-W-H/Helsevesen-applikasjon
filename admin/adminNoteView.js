@@ -4,12 +4,14 @@
 function adminNoteView() {
     model.app.inView = `
     <div>
-        <form onsubmit="adminNoteController()">
+        <form onsubmit="adminNoteController(event)">
             <hr>
             <label for="adminNoteTitle">Notat titel</label>
             <input id="adminNoteTitle" placeholder="Notat titel">
+
             <label for="adminNoteUsr">Skrevet av</label>
             <input id="adminNoteUsr" placeholder="Skrevet av">
+
             <label for="adminNote"></label>
             <hr><br>
             <textarea id="adminNote" rows="10" cols="100"></textarea>
