@@ -17,7 +17,8 @@ const model = {
         inView: "",
         header: '',
         leftSideMenu: '',
-        rightSideMunue: '',
+        rightSideMenu: '',
+        footer: '',
     },
 
     input: {
