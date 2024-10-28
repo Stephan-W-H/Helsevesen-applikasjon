@@ -12,6 +12,7 @@ const model = {
         ],
         logo: null,
         page: "mainView",
+        usrId: "",
         usrId: 1999,
         inView: "",
     },
