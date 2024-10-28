@@ -29,7 +29,9 @@ function wprofileView() {
         ${p.date}
         </div>
             `;
+        
         }
+
     }
     return html;
 }

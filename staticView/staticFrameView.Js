@@ -22,8 +22,7 @@ function homeFunction() {
 }
 
 function pageSwitch() {
-    let p = model.app.page;
-    switch (p) {
+    switch (model.app.page) {
         case "mainView":
             mainView();
             break;

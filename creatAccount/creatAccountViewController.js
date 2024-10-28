@@ -19,11 +19,27 @@ function addHobby(hobby)
         }
         else{alert('Din hobby eksisterer i oversikt listen, venligst huk av for ønskede hobbyer i listen først')}
 }
+function genderPush(G)
+{
+    model.input.registration.gender = G
+}
+
+function licencePush(L)
+{
+    model.input.registration.driverLicence.push(L)
+    console.log( model.input.registration.driverLicence)
+}
+function dayPush(day) 
+{
+    model.input.registration.date.push(day)
+}
+function hobbyPush(hobby) 
+{
+    model.input.registration.interest.push(hobby)
+}
 
 
-
-
-function regisetr() 
+function regiseter() 
 {
     let p = model.input.registration
     let newUser = {
@@ -40,16 +56,12 @@ function regisetr()
             place: p.place,
             interest: p.interest,
             exp: p.exp,
-            date: {
-                startTime: p.date.startTime,
-                stoptime: p.date.stoptime,
-                days: p.date.days
-            },
+            date: p.date,
             travel: p.travel,
             info: p.info,
             picture: p.picture,
     }  
-
+    model.app.usrId = newUser.id
     model.data.users.usr.push(newUser)
     console.log( model.data.users.usr)
     p.id = null
@@ -65,13 +77,12 @@ function regisetr()
     p.place = null
     p.interest = null
     p.exp = null
-    p.date = {
-        startTime: '',
-        stoptime: '',
-        days: [],
-    },
+    p.date = [],
     p.travel = null
     p.info = null
     p.picture = null
+
+    model.app.page = 'userView'
+    pageSwitch()
     
 }
