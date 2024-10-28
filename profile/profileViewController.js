@@ -6,8 +6,8 @@ function wprofileView() {
 
             html = /*HTML*/ `
             <div class="header">
-            <div>${p.fname}
-            <div>${p.lname}
+            <div>${p.fname}</div>
+            <div>${p.lname}</div>
         </div>
     
         <div class="container">
