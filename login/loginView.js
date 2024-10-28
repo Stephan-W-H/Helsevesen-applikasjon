@@ -4,9 +4,9 @@ function loginView() {
 
     <div class="bodyContainer">
         <div class="container">
-            <form>
+            <div>${errorMsg}</div>
+            <div class="loginBox">
                 <h2>Log in</h2>
-                
                 <div class= "formGroup">
                     <label for="email">Email</label>
                     <input id="email" type="email" class="inputField" onchange="model.input.login.username = this.value"> 
@@ -17,8 +17,8 @@ function loginView() {
                     <input id="pass" type="password" class="inputField" onchange="model.input.login.password = this.value"> 
                 </div>
                     
-                <button class="btn" onclick="loginValidation()">Log in</button>
-            </form>    
+                <button class="btn" onclick="checkInputs()">Log in</button>
+            </div>    
         </div>
     </div>
     `;
