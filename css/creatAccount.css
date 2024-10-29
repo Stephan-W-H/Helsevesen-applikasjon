@@ -46,3 +46,23 @@
 {
     margin:5px
 }
+
+.cavFooter
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    height: 100px;
+    background-color: white;
+}
+
+.cavButton
+{
+    height: 50px;
+    width: 200px;
+    font-size: larger;
+    font-weight: bold;
+    border-width: 2px;
+}
+.cavButton:hover{opacity: 80%;}
