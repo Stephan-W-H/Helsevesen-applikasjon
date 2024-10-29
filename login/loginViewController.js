@@ -2,32 +2,6 @@ let errorMsg = "";
 let adminLogin = false;
 let userLogin = false;
 
-function checkInputs(){
-    errorMsg = "";
-    //Check if the input fields are not empty
-    console.log(model.input.login.username)
-    console.log(model.input.login.password)
-    if (!model.input.login.username || model.input.login.username == ''  && !model.input.login.password || model.input.login.password == '' ) {
-        errorMsg = "Email and password cannot be empty";
-        emptyInputs();
-        loginView();
-        return;
-    } else if (!model.input.login.username || model.input.login.username == '') {
-        errorMsg = "Email cannot be empty";
-        emptyInputs();
-        loginView();
-        return;
-    } else if (!model.input.login.password || model.input.login.password == '') {
-        errorMsg = "Password cannot be empty";
-        emptyInputs();
-        loginView();
-        return;
-    }
-
-
-    checkAdmin();
-}
-
 function checkAdmin(){
     //check admin validation
     for(let i = 0; i < model.data.users.admin.length; i++){
@@ -60,12 +34,7 @@ function checkUser(){
 
 function loginIsIncorrect(){
     if(!adminLogin && !userLogin){
-        errorMsg = "Email or password is inccorect";
+        errorMsg = `<div class="errorBox">Email or password is inccorect</div>`;
         loginView();
     }
-}
-
-function emptyInputs(){
-    model.input.login.username = null;
-    model.input.login.password = null;
 }

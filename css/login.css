@@ -1,29 +1,40 @@
-.bodyContainer {
-    min-height: 60vh;
-    display: flex;
-    
-}
+
 
 .container {
+    display: flex;
     margin: auto;
     width: 400px;
-    max-width: 90%;
+    display: flex;
+    flex-direction: column;
+}
+.errorContainer {
+
+    height: 150px;
 }
 
-.container .loginBox {
+.errorBox {
+    margin-top: 100px;
+    display: flex;
+    border: 1px solid #ddd;
+    height: 40px;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffcccc;
+}
 
+.container form {
     padding: 30px;
     border-radius: 8px;
     background-color: #f9f9f9;
     border: 1px solid #ddd;
 }
 
-.container .loginBox h2 {
+.container form h2 {
     text-align: center;
     margin-bottom: 20px;
 }
 
-.container .loginBox .inputField {
+.container form .inputField {
     width: 100%;
     height: 25px;
     margin: 5px -6px 18px;
