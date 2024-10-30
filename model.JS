@@ -15,10 +15,10 @@ const model = {
         usrId: "",
         //usrId: 1999,
         inView: "",
-        header: '',
-        leftSideMenu: '',
-        rightSideMenu: '',
-        footer: '',
+        header: "",
+        leftSideMenu: "",
+        rightSideMenu: "",
+        footer: "",
     },
 
     input: {
@@ -76,6 +76,11 @@ const model = {
             note: "",
             noteAuthor: "",
             selectedUsrId: "",
+            patientId: "",
+            location: "",
+            duration: "",
+            information: "",
+            missionStatus: "",
         },
     },
 
@@ -138,15 +143,13 @@ const model = {
                     travel: "Så langt som mulig",
                     info: "Jeg er veldig smart",
                     picture: "image/bilde1.jpg",
-                    missionStatus: "Er ledig", // maybe, maybe not???
-                    mission: [
-                        {
-                            patientId: "",
-                            location: "",
-                            duration: "",
-                            information: "",
-                        },
-                    ],
+                    mission: {
+                        missionStatus: "", // maybe, maybe not???
+                        patientId: "",
+                        location: "",
+                        duration: "",
+                        information: "",
+                    },
                     note: {
                         noteId: [],
                         adminUsername: [],
@@ -172,15 +175,13 @@ const model = {
                     travel: "Så langt som mulig",
                     info: "Jeg er veldig smart",
                     picture: "image/bilde1.jpg",
-                    missionStatus: "Er ledig", // maybe, maybe not???
-                    mission: [
-                        {
-                            patientId: "",
-                            location: "",
-                            duration: "",
-                            information: "",
-                        },
-                    ],
+                    mission: {
+                        missionStatus: "", // maybe, maybe not???
+                        patientId: "",
+                        location: "",
+                        duration: "",
+                        information: "",
+                    },
                     note: {
                         noteId: [],
                         adminUsername: [],
@@ -206,8 +207,13 @@ const model = {
                     travel: null,
                     info: "Jeg liker å bake kake",
                     picture: "image/bilde2.jpg",
-                    missionStatus: "Er på oppdrag", // maybe, maybe not???
-                    mission: null,
+                    mission: {
+                        missionStatus: "", // maybe, maybe not???
+                        patientId: "",
+                        location: "",
+                        duration: "",
+                        information: "",
+                    },
                     note: {
                         noteId: [],
                         adminUsername: [],
@@ -215,15 +221,13 @@ const model = {
                     },
                 },
             ],
-            mission: [
-                {
-                    userId: [],
-                    patientId: "",
-                    location: "",
-                    duration: "",
-                    information: "",
-                },
-            ],
+            mission: {
+                userId: "",
+                patientId: "",
+                location: "",
+                duration: "",
+                information: "",
+            },
             userInterests: ["Strikking", "Hekling", "Sykling", "Jogging"],
             adminViewResult: [],
             adminSeconPage: {
@@ -243,8 +247,13 @@ const model = {
                 travel: null,
                 info: null,
                 picture: null,
-                missionStatus: null, // maybe, maybe not???
-                mission: null,
+                mission: {
+                    missionStatus: "", // maybe, maybe not???
+                    patientId: "",
+                    location: "",
+                    duration: "",
+                    information: "",
+                },
                 note: {
                     noteId: [],
                     adminUsername: [],

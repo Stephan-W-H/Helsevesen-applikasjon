@@ -23,6 +23,4 @@ function adminNoteController(event) {
     model.input.adminInPut.note = null;
     model.input.adminInPut.noteAuthor = null;
     model.input.adminInPut.noteId = null;
-
-    updateView();
 }
