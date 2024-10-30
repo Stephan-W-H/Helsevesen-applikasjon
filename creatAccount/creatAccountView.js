@@ -63,6 +63,7 @@ function creatAccountView() {
                 <option value="D1"  >D1 Minibuss</option>
                 <option value="D"  >D Buss</option>
             </select>
+            <div>${myLicensesPrint()}</div>
         </div> 
         <div class="miniContainer">
             <div class="miniContainerBox">
@@ -71,6 +72,7 @@ function creatAccountView() {
                 <option></option>
                 ${creatHobbyOptions()}
             </select><br>
+            <div>${hobbyPrint()}</div>
             </div>
             <div class="miniContainerBox">
             <label for="hobbyInput">Eller Skriv Her</label><br>
@@ -140,7 +142,7 @@ function creatAccountView() {
         </div>
     </div>
 </div>
-<footer><button onclick="regiseter()">Registrer</button></footer>
+<footer class="cavFooter"><button class="cavButton" onclick="regiseter()">Registrer</button></footer>
     `
     console.log(model.data.users.usr)
     updateView()

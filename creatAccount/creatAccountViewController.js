@@ -26,8 +26,9 @@ function genderPush(G)
 
 function licencePush(L)
 {
-    model.input.registration.driverLicence.push(L)
-    console.log( model.input.registration.driverLicence)
+    if(!model.input.registration.driverLicence.includes(L)){
+    model.input.registration.driverLicence.push(L)}
+    creatAccountView()
 }
 function dayPush(day) 
 {
@@ -35,13 +36,17 @@ function dayPush(day)
 }
 function hobbyPush(hobby) 
 {
-    model.input.registration.interest.push(hobby)
+    if(!model.input.registration.interest.includes(hobby)){
+        model.input.registration.interest.push(hobby)}
+    creatAccountView()
 }
 
 
 function regiseter() 
 {
     let p = model.input.registration
+    
+    if(p.firstname != null && p.lastname != null && p.email != null && p.password != null){
     let newUser = {
             id: model.data.users.usr.length + 1,
             firstname: p.firstname,
@@ -73,9 +78,9 @@ function regiseter()
     p.age = null
     p.gender = null
     p.ethnicity = null
-    p.driverLicence = null
+    p.driverLicence = []
     p.place = null
-    p.interest = null
+    p.interest = []
     p.exp = null
     p.date = [],
     p.travel = null
@@ -84,5 +89,26 @@ function regiseter()
 
     model.app.page = 'userView'
     pageSwitch()
-    
+}
+else{ alert('fyll ut Fornavn, Etternavn, Email og Passord for å registrere bruker')}
+}
+
+function myLicensesPrint()
+{
+    let print = '';
+    for(let i = 0; i < model.input.registration.driverLicence.length; i++)
+        {
+            print += ` ${model.input.registration.driverLicence[i]},`
+        }
+    return print;
+}
+
+function hobbyPrint()
+{
+    let print = '';
+    for(let i = 0; i < model.input.registration.interest.length; i++)
+        {
+            print += `  ${model.input.registration.interest[i]},`
+        }
+    return print;
 }
