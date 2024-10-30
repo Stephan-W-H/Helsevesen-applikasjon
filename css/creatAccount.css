@@ -66,3 +66,4 @@
     border-width: 2px;
 }
 .cavButton:hover{opacity: 80%;}
+.cavButton:active{opacity: 50%;}
