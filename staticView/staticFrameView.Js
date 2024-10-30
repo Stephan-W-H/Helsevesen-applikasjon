@@ -3,8 +3,11 @@ pageSwitch();
 function updateView() {
     app.innerHTML = /*HTML*/ `
     <main>
-
-        <header onclick="homeFunction()" class="header">Header ${model.app.header}</header>
+    
+        <header class="header">
+            <img class="logo" onclick="homeFunction()" src="image/helsevesen logo til prosjekt.png">
+            ${model.app.header}
+        </header>
         
         <article class="main">${model.app.inView}</article>
         <aside>Sidebar1 ${model.app.leftSideMenu}</aside>
