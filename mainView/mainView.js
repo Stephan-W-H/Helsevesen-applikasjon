@@ -1,6 +1,5 @@
 function mainView() {
     model.app.inView = /*HTML*/ `
-    <img class="imageLogo" src="image/helsevesen logo til prosjekt.png">
     <div class="header">Home</div>
     <div onclick=" loginView()" class="headerBtn">Login</div>
     <button onclick="profileView()">Bruker sin side</button>
