@@ -4,16 +4,20 @@ function updateView() {
     app.innerHTML = /*HTML*/ `
     <main>
     
-        <header class="header">
-            <img class="logo" onclick="homeFunction()" src="image/helsevesen logo til prosjekt.png">
+        <header>
             ${model.app.header}
+            <div class="logoBox" onclick="homeFunction()">
+                <img class="logo" src="image/Logo4.png">
+                <div class="logoText">LysGlimt</div>
+            </div>
+            <div onclick=" loginView()" class="headerBtn">Login</div>
         </header>
         
         <article class="main">${model.app.inView}</article>
-        <aside>Sidebar1 ${model.app.leftSideMenu}</aside>
-        <nav>Sidebar2 ${model.app.rightSideMenu}</nav>
+        <aside>${model.app.leftSideMenu}</aside>
+        <nav>${model.app.rightSideMenu}</nav>
 
-        <footer>Footer ${model.app.footer}</footer>
+        <footer>${model.app.footer}</footer>
         
     </main>
 `;

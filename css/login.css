@@ -27,6 +27,7 @@
     border-radius: 8px;
     background-color: #f9f9f9;
     border: 1px solid #ddd;
+    box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
 }
 
 .container form h2 {
@@ -49,10 +50,11 @@
     height: 35px;
     border: none;
     border-radius: 4px;
-    background-color: #00cc00;
+    background-image: linear-gradient(#6a8352, #cadb97 90%, #6a8352);
     color: white;
     cursor: pointer;
     font-size: 16px;
+    
 }
 
 .btn:hover{
