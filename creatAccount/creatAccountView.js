@@ -25,10 +25,10 @@ function creatAccountView() {
         </div> 
         <div>
             <label for="E-mail">Epost:</label><br>
-            <input id="E-mail" type="email" placeholder="abc@abc.com" onchange="model.input.registration.email"><br>
+            <input id="E-mail" type="email" placeholder="abc@abc.com" onchange="model.input.registration.email = this.value"><br>
         </div> 
         <div>
-            <label for="password">Epost:</label><br>
+            <label for="password">Passord:</label><br>
             <input id="password" type="password" placeholder="********" onchange="model.input.registration.password = this.value"><br>
         </div> 
         <div> 

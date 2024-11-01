@@ -45,7 +45,7 @@ function hobbyPush(hobby)
 function regiseter() 
 {
     let p = model.input.registration
-    
+    console.log(p.firstname, p.lastname, p.email, p.password)
     if(p.firstname != null && p.lastname != null && p.email != null && p.password != null){
     let newUser = {
             id: model.data.users.usr.length + 1,
