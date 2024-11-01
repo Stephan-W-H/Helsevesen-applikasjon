@@ -23,8 +23,12 @@ function adminSecondPagePrint() {
         <p>Tid: ${user.time}</p>
         <p>Reise: ${user.travel}</p>
         <p>Information: ${user.info}</p>
+        <h2>Oppdrag</h2>
         <p>Oppdrag status: ${user.missionstatus}</p>
-        <p>Oppdrag: ${user.mission}</p>
+        <p>Oppdrag: ${user.mission.duration}</p>
+        <p>Oppdrag: ${user.mission.information}</p>
+        <p>Oppdrag: ${user.mission.location}</p>
+        <p>Oppdrag: ${user.mission.patientId}</p>
         <h2>Notater: </h2>
         <p>Notat id: ${user.note.noteId}</p>
         <p>Notat skrevet av: ${user.note.adminUsername}</p>
@@ -42,8 +46,8 @@ function adminViewSecondPage() {
         <hr><br>
         <div>
            <button onclick="adminDeleteUserView()">Slett Bruker</button>
-           <button>Rediger</button>
-           <button>Opdrag</button>
+           <button onclick="adminEditProfileView()">Rediger</button>
+           <button onclick="adminMissionView()">Opdrag</button>
            <button onclick="adminNoteView()">Lag et notat</button>
            <button onclick="adminSwapPage()">Tilbake til forige side</button>
         </div>
