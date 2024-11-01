@@ -65,6 +65,8 @@ const model = {
             phone: null,
         },
 
+        searchResult: [],
+
         autogen: {
             // automatisk id produsering
             id: 2,
@@ -126,11 +128,11 @@ const model = {
             usr: [
                 {
                     id: 1999,
-                    fname: "", // first name
-                    lname: "", // last name
+                    fname: "Anders", // first name
+                    lname: "Andersen", // last name
                     password: 123,
                     gender: "Mann",
-                    email: "",
+                    email: "anders@online.no",
                     phone: "",
                     age: 38,
                     ethnicity: "Norsk",
@@ -201,10 +203,10 @@ const model = {
                     ethnicity: "Norsk",
                     driverLicence: [],
                     place: "Halden",
-                    interest: null,
-                    exp: null,
+                    interest: [],
+                    exp: '',
                     date: [],
-                    travel: null,
+                    travel: '',
                     info: "Jeg liker å bake kake",
                     picture: "image/bilde2.jpg",
                     mission: {
