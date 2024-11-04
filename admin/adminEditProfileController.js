@@ -97,5 +97,7 @@ function adminEditUsr(event) {
         if (info !== null && info !== "") {
             model.data.users.usr[index].info = model.input.registration.info;
         }
+    } else {
+        console.log("ERROR");
     }
 }
