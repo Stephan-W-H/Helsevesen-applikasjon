@@ -131,7 +131,7 @@ const model = {
                     id: 1999,
                     fname: "Anders", // first name
                     lname: "Andersen", // last name
-                    password: 123,
+                    password: "123",
                     gender: "Mann",
                     email: "anders@online.no",
                     phone: "",
@@ -163,7 +163,7 @@ const model = {
                     id: 1232323,
                     fname: "Ola", // first name
                     lname: "Olsen", // last name
-                    password: 123,
+                    password: "123",
                     gender: "Mann",
                     email: "ola@mail.no",
                     phone: "12312323",
@@ -196,7 +196,7 @@ const model = {
                     id: 2323232,
                     fname: "Kari", // first name
                     lname: "Hansen", // last name
-                    password: 123,
+                    password: "123",
                     gender: "Kvinne",
                     email: "abc@123.no",
                     phone: "32111321",
