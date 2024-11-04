@@ -37,13 +37,13 @@ function adminEditUsr(event) {
     const info = document.getElementById("adminEditInfo").value;
     model.input.registration.info = info;
 
-    const idOfUsr = model.app.usrId;
+    const idOfUsr = model.data.users.adminSeconPage.id;
     const index = model.data.users.usr.findIndex((usr) => usr.id === idOfUsr);
 
     if (index !== -1) {
-        if (usrId !== null && usrId !== "") {
-            model.data.users.usr[index].id = model.input.registration.id;
-        }
+        //if (usrId !== null && usrId !== "") {
+        //    model.data.users.usr[index].id = model.input.registration.id;
+        //}
         if (fname !== null && fname !== "") {
             model.data.users.usr[index].fname =
                 model.input.registration.firstname;

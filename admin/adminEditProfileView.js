@@ -6,9 +6,9 @@ function adminEditProfileView() {
     <div>
         <h1>Rediger bruker</h1>
         <form onsubmit="adminEditUsr(event)">
-            <label for="adminEditUsrId">Bruker id:</label>
-            <br>
-            <input id="adminEditUsrId" placeholder="Bruker id">
+            <!-- <label for="adminEditUsrId">Bruker id:</label> -->
+            <!-- <br> -->
+            <!-- <input id="adminEditUsrId" placeholder="Bruker id"> -->
             <br>
             <label for="adminEditFname">Fornavn:</label>
             <br>
