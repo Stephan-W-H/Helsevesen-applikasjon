@@ -46,15 +46,81 @@ function kontaktInfo(){
         <div>${model.data.users.usr[index].driverLicence}</div>
         <div>${model.data.users.usr[index].place}</div>
         <div>${model.data.users.usr[index].interest}</div>
-        <div>${model.data.users.usr[index].exp}</div>
         <div>${model.data.users.usr[index].travel}</div>
-        <div>${model.data.users.usr[index].info}</div>
         <div>${model.data.users.usr[index].picture}</div>
         <div>${model.data.users.usr[index].mission}</div>
-
         </div>
+    }
+}
 
+function kvalifikiasjoner(){
+    const user = model.data.users.usr
+    
+    const idOfUsr = model.app.usrId;
+    const index = model.data.users.usr.findIndex((usr) => usr.id === idOfUsr);
+    
+    if (index !== -1) {
+        <div>${model.data.users.usr[index].exp}</div>
+    
+    }
 
+}
+
+function sertifiseringer(){
+    const user = model.data.users.usr
+    
+    const idOfUsr = model.app.usrId;
+    const index = model.data.users.usr.findIndex((usr) => usr.id === idOfUsr);
+    
+    if (index !== -1) {
+<div>${model.data.users.usr[index].info}</div>
+    }
+}
+
+function sertifiseringer(){
+    const user = model.data.users.usr
+    
+    const idOfUsr = model.app.usrId;
+    const index = model.data.users.usr.findIndex((usr) => usr.id === idOfUsr);
+    
+    if (index !== -1) {
 
     }
 }
+
+function bio(){
+    const user = model.data.users.usr
+    
+    const idOfUsr = model.app.usrId;
+    const index = model.data.users.usr.findIndex((usr) => usr.id === idOfUsr);
+    
+    if (index !== -1) {
+
+    }        
+}
+
+function rediger(){
+    const user = model.data.users.usr
+    
+    const idOfUsr = model.app.usrId;
+    const index = model.data.users.usr.findIndex((usr) => usr.id === idOfUsr);
+    
+    if (index !== -1) {
+
+    }
+}
+
+
+function oppdrag(){
+    const user = model.data.users.usr
+    
+    const idOfUsr = model.app.usrId;
+    const index = model.data.users.usr.findIndex((usr) => usr.id === idOfUsr);
+    
+    if (index !== -1) {
+
+    }
+}
+
+
+
