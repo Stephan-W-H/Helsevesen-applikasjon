@@ -2,7 +2,7 @@
 //
 //
 function adminNoteView() {
-    model.app.inView = `
+    model.app.inView = /*html*/`
     <div>
         <form onsubmit="adminNoteController(event)">
             <hr>
