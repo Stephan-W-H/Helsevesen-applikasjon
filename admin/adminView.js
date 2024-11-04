@@ -6,8 +6,8 @@ function adminView() {
     model.app.inView = `
     <div id="adminMain">
         <form id="adminSearch">
-            <label for="search"></label>
-            <input id="search" placeholder="Søk her">
+            <label for="searching"></label>
+            <input id="searching" onchange="search(this.value)" placeholder="Søk her">
         </form>
         <br><br>
         <div>
