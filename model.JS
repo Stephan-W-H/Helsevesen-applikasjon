@@ -19,6 +19,7 @@ const model = {
         leftSideMenu: "",
         rightSideMenu: "",
         footer: "",
+        loginText: "",
     },
 
     input: {
