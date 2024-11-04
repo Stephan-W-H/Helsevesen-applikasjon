@@ -5,7 +5,7 @@ function adminEditProfileView() {
     model.app.inView = `
     <div>
         <h1>Rediger bruker</h1>
-        <form>
+        <form onsubmit="adminEditUsr(event)">
             <label for="adminEditUsrId">Bruker id:</label>
             <br>
             <input id="adminEditUsrId" placeholder="Bruker id">
@@ -62,18 +62,19 @@ function adminEditProfileView() {
             <br>
             <input id="adminEditDate" placeholder="Dato">
             <br>
-            <label for="adminEditTrevel">Reise</label>
+            <label for="adminEditTravel">Reise</label>
             <br>
-            <input id="adminEditTrevel" placeholder="Reise">
+            <input id="adminEditTravel" placeholder="Reise">
             <br>
             <label for="adminEditInfo">Info</label>
             <br>
             <input id="adminEditInfo" placeholder="Info">
             <br>
-            <label for="adminEditPicture">Bilde</label>
-            <br>
-            <input id="adminEditPicture" placeholder="Bilde">
-            <br>
+            <!-- <label for="adminEditPicture">Bilde</label> -->
+            <!-- <br> -->
+            <!-- <input id="adminEditPicture" placeholder="Bilde"> -->
+            <!-- <br> -->
+            <input type="submit" value="Lagre endring">
         </form>
     </div>
 `;
