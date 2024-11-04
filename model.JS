@@ -130,11 +130,7 @@ const model = {
                 {
                     id: 1999,
                     fname: "Anders", // first name
-<<<<<<< HEAD
                     lname: "Andersen", // last name
-=======
-                    lname: "Gundersen", // last name
->>>>>>> f95ef61 (edit user function)
                     password: "123",
                     gender: "Mann",
                     email: "anders@online.no",
@@ -209,9 +205,9 @@ const model = {
                     driverLicence: [],
                     place: "Halden",
                     interest: [],
-                    exp: '',
+                    exp: "",
                     date: [],
-                    travel: '',
+                    travel: "",
                     info: "Jeg liker å bake kake",
                     picture: "image/bilde2.jpg",
                     mission: {
