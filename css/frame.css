@@ -7,7 +7,7 @@ body {
 main {
     display: grid;
     grid-template-columns: 1fr 6fr 1fr;
-    grid-template-rows: 80px auto 70px;
+    grid-template-rows: 60px auto 70px;
     grid-template-areas:
         "topbar topbar topbar"
         "sidebar1 content sidebar2"
@@ -62,6 +62,7 @@ footer {
     display: flex;
     gap: 10px;
     color: white;
+    margin-bottom: 10px;
 
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     margin-left: 20px;
@@ -69,7 +70,7 @@ footer {
 }
 
 .logo {
-    height: 50px;
+    height: 40px;
     margin-top: 5px;
 }
 
@@ -91,6 +92,6 @@ footer {
 }
 
 .logoText {
-        font-size: 50px;
+        font-size: 40px;
 }
 
