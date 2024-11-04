@@ -26,11 +26,29 @@ function search(input)
 
 function printReslut()
 {
+    let p = model.input.searchResult
     let print = ''
     for(let i = 0; i< model.input.searchResult.length; i++)
     {
-        print += `<div>${model.input.searchResult[i].fname}</div>`
+        print += `        <div id="adminSearcResult" class="adminSearcResult" onclick="adminStoreUsrData(${i})">
+            <div>
+                <img src="${model.data.users.usr[i].picture}" id="adminSearchImg" class="adminSearchImg" onclick="adminStoreUsrData(${i})">
+                <ul>
+                    <li>ID: ${p[i].id}</li>
+                    <li>Navn: ${p[i].fname}</li>
+                    <li>Telefon: ${p[i].phone}</li>
+                    <li>Setd: ${p[i].place}</li>
+                </ul>
+            </div>
+            <hr>
+            <div id="adminUsrBio" class="adminUsrBio">
+                <p>Info: ${p[i].info}</p>
+                <p>Status: ${p[i].missionStatus}</p>
+            </div>
+        </div>
+        <hr><br>`
     }
     return print
 }
+
 

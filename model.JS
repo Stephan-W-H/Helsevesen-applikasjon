@@ -19,7 +19,7 @@ const model = {
         leftSideMenu: "",
         rightSideMenu: "",
         footer: "",
-        loginText: "",
+        loginBtnText: "",
     },
 
     input: {

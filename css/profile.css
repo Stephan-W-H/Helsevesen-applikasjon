@@ -11,6 +11,7 @@
     float: left;
 }
 
+<<<<<<< Updated upstream
 
 .items {
     display: flex;
@@ -18,6 +19,76 @@
     width: 120px;
     height: 32px;
     margin: 5px;
+=======
+.item1 {
+
+    left: 2px;
+    top: 20%;
+    width: 120px;
+    height: 32px;
+    margin: 0;
+    text-align: center;
+    border-radius: 4px;
+    background-color: grey;
+    
+}
+
+.item2 {
+ 
+    left: 2px;
+    top: 25%;
+    width: 120px;
+    height: 32px;
+    margin: 0;
+    text-align: center;
+    border-radius: 4px;
+    background-color: grey;
+}
+
+.item3 {
+ 
+    left: 2px;
+    top: 30%;
+    width: 120px;
+    height: 32px;
+    margin: 0;
+    text-align: center;
+    border-radius: 4px;
+    background-color: grey;
+}
+
+.item4 {
+
+    left: 2px;
+    top: 35%;
+    width: 120px;
+    height: 32px;
+    margin: 0;
+    text-align: center;
+    border-radius: 4px;
+    background-color: grey;
+}
+
+.item5 {
+ 
+    left: 2px;
+    top: 40%;
+    width: 120px;
+    height: 32px;
+    margin: 0;
+    text-align: center;
+    border-radius: 4px;
+    background-color: grey;
+}
+
+.item6 {
+
+    left: 2px;
+    top: 45%;
+    width: 120px;
+    height: 32px;
+    margin: 0;
+>>>>>>> Stashed changes
     text-align: center;
     border-radius: 4px;
     background-color: grey;
@@ -25,8 +96,14 @@
 
 
 .bioText {
+<<<<<<< Updated upstream
     display: flex;
     justify-content: center;
+=======
+    top: 20%;
+    left: 10%;
+  
+>>>>>>> Stashed changes
     border: 2px solid black;
     width: 80%;
     height: 400px;
@@ -35,8 +112,14 @@
 }
 
 .foot {
+<<<<<<< Updated upstream
     display: flex;
     justify-content: center;
+=======
+    
+    bottom: 30%;
+    left: 10%;
+>>>>>>> Stashed changes
     border: 2px solid black;
     width: 80%;
     height: 200px;
