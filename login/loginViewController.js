@@ -9,6 +9,7 @@ function checkIfLoggedIn(){
         model.app.loginBtnText = "Logg inn";
         model.input.login.username = null;
         model.input.login.password = null;
+        model.app.profileHeaderText = '';
         adminLogin = false;
         userLogin = false;
         pageSwitch()
@@ -29,6 +30,7 @@ function checkAdmin(){
             model.app.usrId = model.data.users.admin[i].id;
             model.app.loginBtnText = "Logg ut";
             errorMsg = "";
+            profileHeaderText = '';
             pageSwitch();               
             return
         }

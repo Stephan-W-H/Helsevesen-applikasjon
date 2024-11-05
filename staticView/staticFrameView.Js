@@ -10,6 +10,7 @@ function updateView() {
                 <img class="logo" src="image/Logo4.png">
                 <div class="logoText">LysGlimt</div>
             </div>
+            <div class="profileHeaderText">${model.app.profileHeaderText}</div>
             <div onclick=" checkIfLoggedIn()" class="headerBtn">${model.app.loginBtnText}</div>
         </header>
         

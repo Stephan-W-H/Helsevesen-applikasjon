@@ -57,6 +57,9 @@ nav {
 
 .mainFooter { 
     grid-area: footer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background-color: #6a8352;
     background-image: linear-gradient(to top, #6a8352, #cadb97 90%, #6a8352);
 }

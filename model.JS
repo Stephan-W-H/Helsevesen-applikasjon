@@ -21,6 +21,7 @@ const model = {
         rightSideMenu: "",
         footer: "",
         loginBtnText: "Logg inn",
+        profileHeaderText: '',
     },
 
     input: {
