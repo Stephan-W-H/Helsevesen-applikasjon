@@ -10,6 +10,7 @@ function checkIfLoggedIn(){
         model.input.login.username = null;
         model.input.login.password = null;
         model.app.profileHeaderText = '';
+        model.app.userType = '';
         adminLogin = false;
         userLogin = false;
         pageSwitch()
