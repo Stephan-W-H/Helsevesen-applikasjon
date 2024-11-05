@@ -73,6 +73,7 @@ function kvalifikiasjoner(){
 function sertifiseringer(){
     const user = model.data.users.usr
     let html = '';
+    
     const idOfUsr = model.app.usrId;
     const index = model.data.users.usr.findIndex((usr) => usr.id === idOfUsr);
     
