@@ -24,7 +24,6 @@ function updateView() {
 }
 
 function homeFunction() {
-<<<<<<< Updated upstream
     if(model.app.userType == 'user')
         {
             model.app.page = "userView"
@@ -39,12 +38,8 @@ function homeFunction() {
         {
             model.app.page = "mainView";
             pageSwitch();
+            errorMsg = "";
         }
-=======
-    model.app.page = "mainView";
-    errorMsg = "";
-    pageSwitch();
->>>>>>> Stashed changes
 }
 
 function pageSwitch() {
