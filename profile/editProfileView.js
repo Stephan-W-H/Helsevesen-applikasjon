@@ -67,7 +67,6 @@ function editProfileView() {
         <br>
         <input type="submit" value="Lagre endringer">
         <hr>
-        <input>
     </form>
     `;
     updateView();

@@ -1,10 +1,10 @@
-function wprofileView(){
+function wprofileView() {
     let html = "";
     for (let i = 0; i < model.data.users.usr.length; i++) {
         if (model.app.usrId == model.data.users.usr[i].id) {
             let p = model.data.users.usr[i];
 
-        html = /*HTML*/ `
+            html = /*HTML*/ `
         <div class="header">
         <div>${p.fname}</div>
         <div>${p.lname}</div>
@@ -20,14 +20,14 @@ function wprofileView(){
         ${p.date}
         </div>
         
-    `
-    console.log(model.app.usrId)
-    console.log(html)
+    `;
+            console.log(model.app.usrId);
+            console.log(html);
+        }
     }
+    return html;
 }
-return html;
-}
-    
+
 /*function kontaktInfo(){
     const user = model.data.users.usr
     
@@ -123,4 +123,3 @@ function oppdrag(){
 }
 
 */
-
