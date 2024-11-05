@@ -17,7 +17,7 @@ function updateView() {
         <aside>${model.app.leftSideMenu}</aside>
         <nav>${model.app.rightSideMenu}</nav>
 
-        <footer>${model.app.footer}</footer>
+        <footer class="mainFooter">${model.app.footer}</footer>
         
     </main>
 `;

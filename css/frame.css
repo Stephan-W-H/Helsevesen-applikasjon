@@ -55,7 +55,7 @@ nav {
     border-left: solid 4px white;
 }
 
-footer { 
+.mainFooter { 
     grid-area: footer;
     background-color: #6a8352;
     background-image: linear-gradient(to top, #6a8352, #cadb97 90%, #6a8352);
