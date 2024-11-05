@@ -16,6 +16,7 @@ function loginView() {
                     <input id="pass" type="password" class="inputField" onchange="model.input.login.password = this.value" required> 
                 </div>
                     
+                
                 <button class="btn" onclick="checkAdmin()">Logg inn</button>
 
                 <div class="registerTextBox">Har du ikke konto?&nbsp;

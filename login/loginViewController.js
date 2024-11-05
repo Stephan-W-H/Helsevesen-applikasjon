@@ -59,8 +59,4 @@ function loginIsIncorrect(){
         errorMsg = `<div class="errorBox">Email or password is inccorect</div>`;
         loginView();
     }
-    else if(model.input.login.username == null && model.input.login.password == null){
-        errorMsg = `<div class="errorBox">The email and password cannot be empty</div>`; 
-        loginView();
-    }
 }
