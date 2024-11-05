@@ -12,7 +12,6 @@ function profileView() {
 function leftSideMenu() {
     model.app.leftSideMenu = /*html*/ `
     <img class="">
-    
     <div class="items">Kontakt info</div>
     <div class="items">Kvalifikiasjoner</div>
     <div class="items">Sertifiseringer</div>
