@@ -2,6 +2,22 @@ let errorMsg = "";
 let adminLogin = false;
 let userLogin = false;
 
+function checkIfLoggedIn(){
+    if(model.app.usrId != ""){
+        model.app.page = 'mainView'
+        model.app.usrId = "";
+        model.app.loginBtnText = "Logg inn";
+        model.input.login.username = null;
+        model.input.login.password = null;
+        adminLogin = false;
+        userLogin = false;
+        pageSwitch()
+    }
+    else{
+        loginView()
+    }
+}
+
 function checkAdmin(){
     //check admin validation
     for(let i = 0; i < model.data.users.admin.length; i++){
@@ -10,6 +26,8 @@ function checkAdmin(){
             adminLogin = true;
             model.app.page = 'adminView';
             model.app.usrId = model.data.users.admin[i].id;
+            model.app.loginBtnText = "Logg ut";
+            errorMsg = "";
             pageSwitch();               
             return
         }
@@ -25,6 +43,8 @@ function checkUser(){
                 userLogin = true;
                 model.app.page = 'userView';
                 model.app.usrId = model.data.users.usr[i].id;
+                model.app.loginBtnText = "Logg ut";
+                errorMsg = "";
                 pageSwitch();
                 return
         } 
@@ -35,6 +55,10 @@ function checkUser(){
 function loginIsIncorrect(){
     if(!adminLogin && !userLogin){
         errorMsg = `<div class="errorBox">Email or password is inccorect</div>`;
+        loginView();
+    }
+    else if(model.input.login.username == null && model.input.login.password == null){
+        errorMsg = `<div class="errorBox">The email and password cannot be empty</div>`; 
         loginView();
     }
 }
