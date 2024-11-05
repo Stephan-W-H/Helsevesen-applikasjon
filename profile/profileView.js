@@ -23,17 +23,10 @@ function leftSideMenu() {
     `;
 }
 
-<<<<<<< HEAD
-
-function profileHeader(){
-    model.app.profileHeaderText = 'Din innsats teller! Takk for at du gir av din tid til de som trenger det mest';
-
-=======
 function profileHeader() {
     model.app.header = /*html*/ `
     <div>Din innsats teller! Takk for at du gir av din tid til de som trenger det mest.</div>
     `;
->>>>>>> b2b18d6 (edit user profile)
 }
 
 function profileFooter() {
