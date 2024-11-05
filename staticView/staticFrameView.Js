@@ -30,6 +30,8 @@ function homeFunction() {
 
 function pageSwitch() {
     if(model.app.leftSideMenu != '') { model.app.leftSideMenu = ''}
+    if(model.app.header != '') {model.app.header = ''}
+    if(model.app.footer != '') {model.app.footer = ''}
     switch (model.app.page) {
         case "mainView":
             mainView();
