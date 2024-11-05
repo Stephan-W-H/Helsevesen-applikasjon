@@ -28,99 +28,121 @@ function wprofileView(){
 return html;
 }
     
-/*function kontaktInfo(){
-    const user = model.data.users.usr
+function kontaktInfo(){
+    const user = model.data.users.usr;
     
     const idOfUsr = model.app.usrId;
     const index = model.data.users.usr.findIndex((usr) => usr.id === idOfUsr);
     
     if (index !== -1) {
+        model.app.inView = `
         <div>
-        <div>${model.data.users.usr[index].fname}</div>
-        <div>${model.data.users.usr[index].lname}</div>
-        <div>${model.data.users.usr[index].gender}</div>
-        <div>${model.data.users.usr[index].email}</div>
-        <div>${model.data.users.usr[index].phone}</div>
-        <div>${model.data.users.usr[index].age}</div>
-        <div>${model.data.users.usr[index].ethnicity}</div>
-        <div>${model.data.users.usr[index].driverLicence}</div>
-        <div>${model.data.users.usr[index].place}</div>
-        <div>${model.data.users.usr[index].interest}</div>
-        <div>${model.data.users.usr[index].travel}</div>
-        <div>${model.data.users.usr[index].picture}</div>
-        <div>${model.data.users.usr[index].mission}</div>
+        <div>${user[index].picture}</div>
+        <div>${user[index].fname}</div>
+        <div>${user[index].lname}</div>
+        <div>${user[index].email}</div>
+        <div>${user[index].age}</div>
+        <div>${user[index].place}</div>
+        <div>${user[index].phone}</div>
+        <div>${user[index].gender}</div>
+        <div>${user[index].ethnicity}</div>
         </div>
+        `
     }
+    updateView();
 }
+        
 
 function kvalifikiasjoner(){
     const user = model.data.users.usr
+    let html = '';
     
     const idOfUsr = model.app.usrId;
     const index = model.data.users.usr.findIndex((usr) => usr.id === idOfUsr);
     
     if (index !== -1) {
-        <div>${model.data.users.usr[index].exp}</div>
-    
-    }
+        model.app.inView = /*html*/`
+        <div>${user[index].exp}</div>
 
+        `
+    }
+    updateView();        
 }
+
 
 function sertifiseringer(){
     const user = model.data.users.usr
+    let html = '';
     
     const idOfUsr = model.app.usrId;
     const index = model.data.users.usr.findIndex((usr) => usr.id === idOfUsr);
     
     if (index !== -1) {
-<div>${model.data.users.usr[index].info}</div>
+        model.app.inView = `
+        <div>${user[index].info}</div>
+        <div>${user[index].driverLicence}</div>
+        `
     }
+    updateView();
 }
 
-function sertifiseringer(){
-    const user = model.data.users.usr
-    
-    const idOfUsr = model.app.usrId;
-    const index = model.data.users.usr.findIndex((usr) => usr.id === idOfUsr);
-    
-    if (index !== -1) {
-
-    }
-}
 
 function bio(){
     const user = model.data.users.usr
-    
+    let html = '';
+
     const idOfUsr = model.app.usrId;
     const index = model.data.users.usr.findIndex((usr) => usr.id === idOfUsr);
     
     if (index !== -1) {
+        model.app.inView =/*html*/ `
+        <div>${user[index].interest}</div>
+        `
+        
 
     }        
+    updateView();
 }
+
 
 function rediger(){
     const user = model.data.users.usr
+    let html = '';
     
     const idOfUsr = model.app.usrId;
     const index = model.data.users.usr.findIndex((usr) => usr.id === idOfUsr);
     
     if (index !== -1) {
+        model.app.inView =/*html*/ `
+
+        `
 
     }
+    updateView();
 }
 
 
 function oppdrag(){
     const user = model.data.users.usr
+    let html = '';
     
     const idOfUsr = model.app.usrId;
     const index = model.data.users.usr.findIndex((usr) => usr.id === idOfUsr);
     
     if (index !== -1) {
+        model.app.inView =/*html*/ `
+        <div>${user[index].mission}</div>
+        <div>${user[index].travel}</div>
+        `
 
     }
+    updateView();
 }
 
-*/
+        
+        
+        
+       
+        
+
 
