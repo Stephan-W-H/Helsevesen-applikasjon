@@ -11,15 +11,6 @@
     float: left;
 }
 
-<<<<<<< Updated upstream
-
-.items {
-    display: flex;
-    justify-content: center;
-    width: 120px;
-    height: 32px;
-    margin: 5px;
-=======
 .item1 {
 
     left: 2px;
@@ -88,7 +79,6 @@
     width: 120px;
     height: 32px;
     margin: 0;
->>>>>>> Stashed changes
     text-align: center;
     border-radius: 4px;
     background-color: grey;
@@ -96,14 +86,9 @@
 
 
 .bioText {
-<<<<<<< Updated upstream
-    display: flex;
-    justify-content: center;
-=======
     top: 20%;
     left: 10%;
   
->>>>>>> Stashed changes
     border: 2px solid black;
     width: 80%;
     height: 400px;
@@ -112,14 +97,9 @@
 }
 
 .foot {
-<<<<<<< Updated upstream
-    display: flex;
-    justify-content: center;
-=======
     
     bottom: 30%;
     left: 10%;
->>>>>>> Stashed changes
     border: 2px solid black;
     width: 80%;
     height: 200px;

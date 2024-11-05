@@ -44,16 +44,23 @@ function adminViewSecondPage() {
     <div id="adminSecondPageMain">
         ${adminSecondPagePrint()}
         <hr><br>
-        <div>
-           <button onclick="adminDeleteUserView()">Slett Bruker</button>
-           <button onclick="adminEditProfileView()">Rediger</button>
-           <button onclick="adminMissionView()">Opdrag</button>
-           <button onclick="adminNoteView()">Lag et notat</button>
-           <button onclick="adminSwapPage()">Tilbake til forige side</button>
-        </div>
+
     </div>
 
 `;
-
+    buttonsSidebarAdmin()
     updateView();
+}
+
+function buttonsSidebarAdmin() 
+{
+    model.app.leftSideMenu = /*html*/ `  
+        <div class="sideButtons">
+            <div onclick="adminDeleteUserView()" class="sideButton">Slett Bruker</div>
+            <div onclick="adminEditProfileView()" class="sideButton">Rediger</div>
+            <div onclick="adminMissionView()" class="sideButton">Oppdrag</div>
+            <div onclick="adminNoteView()" class="sideButton">Lag et notat</div>
+            <div onclick="model.app.leftSideMenu = '', adminSwapPage()" class="sideButton">Tilbake til forige side</div>
+        </div>
+    `
 }

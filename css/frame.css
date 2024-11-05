@@ -29,7 +29,7 @@ header {
 article {
     grid-area: content;
     padding: 50px;
-    height: 100vh;
+    height: 75vh;
     overflow-y: auto;
     background-color: white;
     box-shadow: inset 15px 0 10px -5px #00000033,
@@ -37,11 +37,14 @@ article {
 }
 
 aside { 
+    display: grid;
     grid-area: sidebar1;
     background-color: white;
     box-shadow: inset 15px 0 10px -5px #00000033,
                 inset -15px 0 10px -5px #00000033;
     border-right: solid 4px white;
+    justify-content: center;
+    align-items: center;
 }
 
 nav { 

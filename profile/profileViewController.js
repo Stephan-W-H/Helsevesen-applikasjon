@@ -28,7 +28,7 @@ function wprofileView(){
 return html;
 }
     
-function kontaktInfo(){
+/*function kontaktInfo(){
     const user = model.data.users.usr
     
     const idOfUsr = model.app.usrId;
@@ -122,5 +122,5 @@ function oppdrag(){
     }
 }
 
-
+*/
 
