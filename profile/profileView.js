@@ -32,7 +32,7 @@ function profileHeader(){
 
 function profileFooter(){
     model.app.footer = /*html*/ `
-    <div>Denne plattformen støtter eldreomsorg gjennom frivillig innsats. Sammen kan vi nå flere.</div>
+    <div class="profileFooterText">Denne plattformen støtter eldreomsorg gjennom frivillig innsats. Sammen kan vi nå flere.</div>
     `;
 }
 

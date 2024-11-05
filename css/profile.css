@@ -3,6 +3,10 @@
     align-items: center;
     font-size: large;
 }
+
+.profileHeaderText{
+    color: white;
+}
     
 
 .profilepic {
@@ -104,4 +108,8 @@
     width: 80%;
     height: 200px;
     margin: auto;
+}
+
+.profileFooterText {
+    color: white;
 }
