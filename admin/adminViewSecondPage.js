@@ -24,11 +24,7 @@ function adminSecondPagePrint() {
         <p>Reise: ${user.travel}</p>
         <p>Information: ${user.info}</p>
         <h2>Oppdrag</h2>
-        <p>Oppdrag status: ${user.missionstatus}</p>
-        <p>Oppdrag: ${user.mission.duration}</p>
-        <p>Oppdrag: ${user.mission.information}</p>
-        <p>Oppdrag: ${user.mission.location}</p>
-        <p>Oppdrag: ${user.mission.patientId}</p>
+        ${printUserMissions()}
         <h2>Notater: </h2>
         <p>Notat id: ${user.note.noteId}</p>
         <p>Notat skrevet av: ${user.note.adminUsername}</p>

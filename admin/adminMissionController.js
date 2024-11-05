@@ -19,7 +19,7 @@ function adminMissionController(event) {
     const usrIndex = model.data.users.usr.findIndex((usr) => usr.id === usrId);
 
     if (usrIndex !== -1) {
-        model.data.users.usr[usrIndex].mission.patientId =
+        /*model.data.users.usr[usrIndex].mission.patientId =
             model.input.adminInPut.patientId;
 
         model.data.users.usr[usrIndex].mission.location =
@@ -32,7 +32,15 @@ function adminMissionController(event) {
             model.input.adminInPut.information;
 
         model.data.users.usr[usrIndex].mission.missionStatus =
-            model.input.adminInPut.missionStatus;
+            model.input.adminInPut.missionStatus;*/
+            let mission = {
+                missionStatus: "Tildelt", 
+                patientId: model.input.adminInPut.patientId,
+                location: model.input.adminInPut.location,
+                duration: model.input.adminInPut.duration,
+                information: model.input.adminInPut.information,
+            }
+            model.data.users.usr[usrIndex].mission.push(mission)
         adminGoToSecondPage();
     } else {
         console.log("Could not find user index");

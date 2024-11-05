@@ -4,6 +4,7 @@
 
 function adminStoreUsrData(storedData) {
     // Store usr data in adminSeconPage (temp storage)
+    model.app.index = storedData
     model.data.users.adminSeconPage = {
         ...model.data.users.usr[storedData], // ... aka spread operator to copy form one array to another
         note: {
