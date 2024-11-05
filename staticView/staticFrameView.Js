@@ -29,6 +29,7 @@ function homeFunction() {
 }
 
 function pageSwitch() {
+    if(model.app.leftSideMenu != '') { model.app.leftSideMenu = ''}
     switch (model.app.page) {
         case "mainView":
             mainView();
