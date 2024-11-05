@@ -23,14 +23,9 @@ function leftSideMenu() {
 }
 
 function profileHeader() {
-<<<<<<< HEAD
     model.app.header = /*html*/ `
     <div class="headerDiv">Din innsats teller! Takk for at du gir av din tid til de som trenger det mest.</div>
     `;
-=======
-    model.app.profileHeaderText = 'Din innsats teller! Takk for at du gir av din tid til de som trenger det mest';
-   
->>>>>>> 9e6067d60f34b4e4181e151b47e778a0fd86f399
 }
 
 function profileFooter() {
