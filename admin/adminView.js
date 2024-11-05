@@ -22,21 +22,22 @@ function adminView() {
 function adminViewDispInfo() {
     let html;
     for (let i = 0; i < model.data.users.usr.length; i++) {
+        model.app.index = i
         html += `
         <div id="adminSearcResult" class="adminSearcResult" onclick="adminStoreUsrData(${i})">
             <div>
-                <img src="${model.data.users.usr[i].picture}" id="adminSearchImg" class="adminSearchImg" onclick="adminStoreUsrData(${i})">
+                <img src="${model.data.users.usr[model.app.index].picture}" id="adminSearchImg" class="adminSearchImg" onclick="adminStoreUsrData(${i})">
                 <ul>
-                    <li>ID: ${model.data.users.usr[i].id}</li>
-                    <li>Navn: ${model.data.users.usr[i].fname}</li>
-                    <li>Telefon: ${model.data.users.usr[i].phone}</li>
-                    <li>Setd: ${model.data.users.usr[i].place}</li>
+                    <li>ID: ${model.data.users.usr[model.app.index].id}</li>
+                    <li>Navn: ${model.data.users.usr[model.app.index].fname}</li>
+                    <li>Telefon: ${model.data.users.usr[model.app.index].phone}</li>
+                    <li>Setd: ${model.data.users.usr[model.app.index].place}</li>
                 </ul>
             </div>
             <hr>
             <div id="adminUsrBio" class="adminUsrBio">
-                <p>Info: ${model.data.users.usr[i].info}</p>
-                <p>Status: ${model.data.users.usr[i].missionStatus}</p>
+                 <p>Info: ${model.data.users.usr[model.app.index].info}</p>
+                ${missionIndicator()}
             </div>
         </div>
         <hr><br>

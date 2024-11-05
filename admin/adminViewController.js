@@ -18,3 +18,25 @@ function adminStoreUsrData(storedData) {
     model.app.page = "adminSecondPage";
     pageSwitch();
 }
+
+
+function missionIndicator()
+{let html = ''
+    for(let i = 0; i < model.data.users.usr[model.app.index].mission.length; i++)
+    if(model.data.users.usr[model.app.index].mission[i].missionStatus == 'Akseptert')
+        {html += `
+            <p>Pasient: ${model.data.users.usr[model.app.index].mission[i].patientId}<p>
+            Status:</br> ${model.data.users.usr[model.app.index].mission[i].missionStatus} 
+            <div class="missionStatus" style="background-color: green"></div>` }
+    else if (model.data.users.usr[model.app.index].mission[i].missionStatus == 'Tildelt') 
+        {html += `
+            <p>Pasient: ${model.data.users.usr[model.app.index].mission[i].patientId}<p>
+            Status:</br> ${model.data.users.usr[model.app.index].mission[i].missionStatus} 
+            <div class="missionStatus" style="background-color: yellow"></div>` }
+    else if(model.data.users.usr[model.app.index].mission[i].missionStatus == 'Avslått')
+        {html += `
+            <p>Pasient: ${model.data.users.usr[model.app.index].mission[i].patientId}<p>
+            Status:</br> ${model.data.users.usr[model.app.index].mission[i].missionStatus} 
+            <div class="missionStatus" style="background-color: red;"></div>`}
+    return html
+}

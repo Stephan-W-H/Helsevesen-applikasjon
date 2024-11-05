@@ -22,6 +22,7 @@ const model = {
         footer: "",
         loginBtnText: "Logg inn",
         profileHeaderText: '',
+        index: null
     },
 
     input: {
@@ -148,13 +149,13 @@ const model = {
                     travel: "Så langt som mulig",
                     info: "Jeg er veldig smart",
                     picture: "image/bilde1.jpg",
-                    mission: {
-                        missionStatus: "", // maybe, maybe not???
-                        patientId: "",
+                    mission: [{
+                        missionStatus: "Akseptert", // maybe, maybe not???
+                        patientId: "Laila",
                         location: "",
                         duration: "",
                         information: "",
-                    },
+                    }],
                     note: {
                         noteId: [],
                         adminUsername: [],
@@ -180,13 +181,20 @@ const model = {
                     travel: "Så langt som mulig",
                     info: "Jeg er veldig smart",
                     picture: "image/bilde1.jpg",
-                    mission: {
-                        missionStatus: "", // maybe, maybe not???
-                        patientId: "",
+                    mission: [{
+                        missionStatus: "Avslått", // maybe, maybe not???
+                        patientId: "Karen",
                         location: "",
                         duration: "",
                         information: "",
                     },
+                    {
+                        missionStatus: "Tildelt",
+                        patientId: "Håkon",
+                        location: "",
+                        duration: "",
+                        information: "",
+                    }],
                     note: {
                         noteId: [],
                         adminUsername: [],
@@ -212,13 +220,27 @@ const model = {
                     travel: "",
                     info: "Jeg liker å bake kake",
                     picture: "image/bilde2.jpg",
-                    mission: {
-                        missionStatus: "", // maybe, maybe not???
-                        patientId: "",
+                    mission:[ {
+                        missionStatus: "Avslått",
+                        patientId: "Hakan",
                         location: "",
                         duration: "",
                         information: "",
                     },
+                    {
+                        missionStatus: "Tildelt",
+                        patientId: "Kjetil",
+                        location: "",
+                        duration: "",
+                        information: "",
+                    },
+                    {
+                        missionStatus: "Akseptert",
+                        patientId: "Nina",
+                        location: "",
+                        duration: "",
+                        information: "",
+                    }],
                     note: {
                         noteId: [],
                         adminUsername: [],
