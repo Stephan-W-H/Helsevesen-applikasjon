@@ -13,6 +13,7 @@ const model = {
         logo: null,
         page: "mainView",
         usrId: "",
+        userType: '',
         //usrId: 1999,
         inView: "",
         header: "",

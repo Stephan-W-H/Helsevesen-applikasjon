@@ -24,6 +24,7 @@ function checkAdmin(){
         if(model.input.login.username == model.data.users.admin[i].email 
             && model.input.login.password == model.data.users.admin[i].password){
             adminLogin = true;
+            model.app.userType = 'admin'
             model.app.page = 'adminView';
             model.app.usrId = model.data.users.admin[i].id;
             model.app.loginBtnText = "Logg ut";
@@ -41,6 +42,7 @@ function checkUser(){
         if(model.input.login.username == model.data.users.usr[i].email
             && model.input.login.password == model.data.users.usr[i].password){
                 userLogin = true;
+                model.app.userType = 'user'
                 model.app.page = 'userView';
                 model.app.usrId = model.data.users.usr[i].id;
                 model.app.loginBtnText = "Logg ut";

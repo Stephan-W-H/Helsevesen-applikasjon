@@ -24,8 +24,21 @@ function updateView() {
 }
 
 function homeFunction() {
-    model.app.page = "mainView";
-    pageSwitch();
+    if(model.app.userType == 'user')
+        {
+            model.app.page = "userView"
+            pageSwitch();
+        }
+    else if(model.app.userType == 'admin')
+        {
+            model.app.page = "adminView"
+            pageSwitch();  
+        }
+        else
+        {
+            model.app.page = "mainView";
+            pageSwitch();
+        }
 }
 
 function pageSwitch() {
