@@ -11,13 +11,14 @@ function profileView() {
 
 function leftSideMenu() {
     model.app.leftSideMenu = /*html*/ `
-    <img class="">
-    <div class="items">Kontakt info</div>
-    <div class="items">Kvalifikiasjoner</div>
-    <div class="items">Sertifiseringer</div>
-    <div class="items">Bio</div>
-    <div class="items" onclick="editProfileView()">Rediger</div>
-    <div class="items">Oppdrag</div>
+    <div class="itemsContainer">
+        <img class="profilepic" src=''>
+        <div class="items">Kontakt info</div>
+        <div class="items">Kvalifikiasjoner</div>
+        <div class="items">Sertifiseringer</div>
+        <div class="items">Bio</div>
+        <div class="items" onclick="editProfileView()">Rediger</div>
+        <div class="items">Oppdrag</div>
     </div>
     `;
 }

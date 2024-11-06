@@ -10,23 +10,29 @@
     color: white;
 }
     
-
 .profilepic {
-    height: 5%;
-    width: 10%; 
-    float: left;
+    height: 120px;
+    width: 120px;
+    margin-top: 20px;
+    background-color: #f9f9f9; 
+
 }
 
+.itemsContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
 .items {
-
-    left: 2px;
-    top: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 120px;
     height: 32px;
-    margin: 0;
-    text-align: center;
     border-radius: 4px;
-    background-color: grey;
+    background-color: #ffffff;
+    box-shadow: inset #93939373 1px 1px 5px 0px, 
+                inset #484848 -1px -1px 5px 0px;
     
 }
 
@@ -34,7 +40,6 @@
 .bioText {
     top: 20%;
     left: 10%;
-  
     border: 2px solid black;
     width: 80%;
     height: 400px;

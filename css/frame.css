@@ -40,11 +40,11 @@ aside {
     display: grid;
     grid-area: sidebar1;
     background-color: white;
-    box-shadow: inset 5px 0 20px -5px #cacaca,
+    box-shadow: inset 0px 0 20px -5px #cacaca,
                 inset -5px 0 20px -5px #cacaca;
     border-right: solid 4px white;
     justify-content: center;
-    align-items: center;
+
 }
 
 nav { 
