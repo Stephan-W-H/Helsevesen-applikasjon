@@ -56,7 +56,7 @@ function buttonsSidebarAdmin() {
             <div onclick="adminEditProfileView()" class="sideButton">Rediger</div>
             <div onclick="adminMissionView()" class="sideButton">Oppdrag</div>
             <div onclick="adminNoteView()" class="sideButton">Lag et notat</div>
-            <div onclick="model.app.leftSideMenu = '', adminSwapPage()" class="sideButton">Tilbake til forige side</div>
+            <div onclick="model.app.leftSideMenu = '', adminSwapPage()" class="sideButton">Tilbake</div>
         </div>
     `;
 }

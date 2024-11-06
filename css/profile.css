@@ -13,17 +13,18 @@
 .profilepic {
     height: 120px;
     width: 120px;
-    margin-top: 20px;
+
     background-color: #f9f9f9; 
 
 }
 
-.itemsContainer {
+.sideButtons {
     display: flex;
     flex-direction: column;
     gap: 10px;
+    margin-top: 20px;
 }
-.items {
+.sideButton  {
     display: flex;
     justify-content: center;
     align-items: center;
