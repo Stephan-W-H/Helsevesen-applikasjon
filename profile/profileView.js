@@ -17,14 +17,15 @@ function leftSideMenu() {
         <div class="sideButton" onclick="kvalifikiasjoner()">Kvalifikiasjoner</div>
         <div class="sideButton" onclick="sertifiseringer()">Sertifiseringer</div>
         <div class="sideButton" onclick="bio()">Bio</div>
-        <div class="sideButton" onclick="rediger()">Rediger</div>
+        <div class="sideButton" onclick="editProfileView()">Rediger</div>
         <div class="sideButton" onclick="oppdrag()">Oppdrag</div>
     </div>
     `;
 }
 
 function profileHeader() {
-    model.app.profileHeaderText = 'Din innsats teller! Takk for at du gir av din tid til de som trenger det mest';
+    model.app.profileHeaderText =
+        "Din innsats teller! Takk for at du gir av din tid til de som trenger det mest";
 }
 
 function profileFooter() {
