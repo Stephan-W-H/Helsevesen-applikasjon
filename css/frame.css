@@ -93,8 +93,7 @@ nav {
     color: white;
     cursor: pointer;
     font-size: 16px;
-    box-shadow: #444444 2px 2px 5px 0px, 
-                #7e7e7e -2px -2px 5px 0px;
+
     background-image: linear-gradient(to top, #6a8352, #cadb97 90%, #6a8352);
     
 
