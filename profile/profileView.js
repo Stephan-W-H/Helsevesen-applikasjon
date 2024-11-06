@@ -10,9 +10,11 @@ function profileView() {
 }
 
 function leftSideMenu() {
+    const usrId = model.app.usrId;
+    const index = model.data.users.usr.findIndex((usr) => usr.id === usrId);
     model.app.leftSideMenu = /*html*/ `
     <div class="sideButtons">
-        <img class="profilepic" src=''>
+        <img class="profilepic" src="${model.data.users.usr[index].picture}">
         <div class="sideButton" onclick="kontaktInfo()">Kontakt info</div>
         <div class="sideButton" onclick="kvalifikiasjoner()">Kvalifikiasjoner</div>
         <div class="sideButton" onclick="sertifiseringer()">Sertifiseringer</div>
