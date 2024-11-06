@@ -22,7 +22,7 @@ function adminView() {
 function adminViewDispInfo() {
     let html;
     for (let i = 0; i < model.data.users.usr.length; i++) {
-        model.app.index = i
+        model.app.index = i;
         html += `
         <div id="adminSearcResult" class="adminSearcResult" onclick="adminStoreUsrData(${i})">
             <div>

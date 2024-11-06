@@ -26,9 +26,10 @@ function adminSecondPagePrint() {
         <h2>Oppdrag</h2>
         ${printUserMissions()}
         <h2>Notater: </h2>
-        <p>Notat id: ${user.note.noteId}</p>
-        <p>Notat skrevet av: ${user.note.adminUsername}</p>
-        <p>Notat: ${user.note.noteText}</p>
+        <p>${adminProduceNote()}</p>
+        <!-- <p>Notat id: ${user.note.noteId}</p> -->
+        <!-- <p>Notat skrevet av: ${user.note.adminUsername}</p> -->
+        <!-- <p>Notat: ${user.note.noteText}</p> -->
         `;
 
     return html;
@@ -44,12 +45,11 @@ function adminViewSecondPage() {
     </div>
 
 `;
-    buttonsSidebarAdmin()
+    buttonsSidebarAdmin();
     updateView();
 }
 
-function buttonsSidebarAdmin() 
-{
+function buttonsSidebarAdmin() {
     model.app.leftSideMenu = /*html*/ `  
         <div class="sideButtons">
             <div onclick="adminDeleteUserView()" class="sideButton">Slett Bruker</div>
@@ -58,5 +58,27 @@ function buttonsSidebarAdmin()
             <div onclick="adminNoteView()" class="sideButton">Lag et notat</div>
             <div onclick="model.app.leftSideMenu = '', adminSwapPage()" class="sideButton">Tilbake til forige side</div>
         </div>
-    `
+    `;
+}
+
+function adminProduceNote() {
+    const usr = model.data.users.adminSeconPage;
+    let html = "";
+
+    if (usr.note.noteText.length > 0) {
+        for (let i = 0; i < usr.note.noteText.length; i++) {
+            html += `
+            <div>
+                <p>Notat ID: ${usr.note.noteId[i]}</p>
+                <p>Skrevet av: ${usr.note.adminUsername[i]}</p>
+                <p>Notat: ${usr.note.noteText[i]}</p>
+            </div>
+            `;
+        }
+    } else {
+        html += `
+        <p>Ingen notater tilgjengelig.</p>
+        `;
+    }
+    return html;
 }
