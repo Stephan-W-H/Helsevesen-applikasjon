@@ -1,11 +1,11 @@
 function mainView() {
     model.app.inView = /*HTML*/ `
-    <div class="header"></div>
     <button onclick="profileView()">Bruker sin side</button>
-    
+    <div class="header">
+        <h2>Bli en støttekontakt med <b>Lysglimt</b> – gjør en forskjell i andres liv</h2>
+    </div>
     <div class="mainDiv">
 
-        <h2>Bli en støttekontakt med <b>Lysglimt</b> – gjør en forskjell i andres liv</h2>
         <p>Har du lyst til å bidra i ditt lokalsamfunn og gjøre en positiv forskjell i noens hverdag?
             Gjennom <b>Lysglimt</b> kan du bli en støttekontakt og bruke litt av din tid til å hjelpe de som trenger det mest. 
             Mange rundt oss opplever utfordringer som kan føles overveldende alene, 
