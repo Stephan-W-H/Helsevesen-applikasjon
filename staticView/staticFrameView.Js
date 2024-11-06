@@ -15,8 +15,8 @@ function updateView() {
         </header>
         
         <article class="main">${model.app.inView}</article>
+        <div class="divider"></div>
         <aside>${model.app.leftSideMenu}</aside>
-        <nav>${model.app.rightSideMenu}</nav>
 
         <footer class="mainFooter">${model.app.footer}</footer>
         

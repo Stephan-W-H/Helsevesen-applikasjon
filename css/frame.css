@@ -2,16 +2,21 @@
 body {
     margin: 0px;
     font-family: sans-serif;
+    
 }
+
+body::-webkit-scrollbar {
+    display: none;
+  }
 
 main {
     display: grid;
-    grid-template-columns: 1fr 6fr 1fr;
+    grid-template-columns: 1fr 6fr;
     grid-template-rows: 60px auto 70px;
     grid-template-areas:
-        "topbar topbar topbar"
-        "sidebar1 content sidebar2"
-        "footer footer footer";
+        "topbar topbar"
+        "sidebar1 content"
+        "footer footer";
 }
     
 /* Grid Items */
@@ -22,7 +27,7 @@ header {
     justify-content: space-between;
     padding-right: 20px;
     background-image: linear-gradient(#6a8352, #cadb97 90%, #6a8352);
-    /* background-image: linear-gradient(to right, #8eff24, #dbffb9); */
+
 }
 
 
@@ -88,15 +93,11 @@ nav {
     cursor: pointer;
     width: 120px;
     height: 35px;
-
     border-radius: 20px;
     color: white;
     cursor: pointer;
     font-size: 16px;
-
     background-image: linear-gradient(to top, #6a8352, #cadb97 90%, #6a8352);
-    
-
 }
 
 .logoText {

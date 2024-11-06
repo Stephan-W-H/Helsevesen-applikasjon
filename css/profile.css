@@ -2,10 +2,10 @@
 .header {
     display: flex;
     align-items: center;
-    font-size: large;
+
 }
 
-.profileFooterText{
+.profileHeaderText{
     color: white;
     display: flex;
     align-items: center;
@@ -62,4 +62,5 @@
 
 .profileFooterText {
     color: white;
+    font-size: large;
 }
