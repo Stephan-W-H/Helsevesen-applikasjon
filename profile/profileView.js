@@ -13,12 +13,12 @@ function leftSideMenu() {
     model.app.leftSideMenu = /*html*/ `
     <div class="sideButtons">
         <img class="profilepic" src=''>
-        <div class="sideButton ">Kontakt info</div>
-        <div class="sideButton ">Kvalifikiasjoner</div>
-        <div class="sideButton ">Sertifiseringer</div>
-        <div class="sideButton ">Bio</div>
-        <div class="sideButton " onclick="editProfileView()">Rediger</div>
-        <div class="sideButton ">Oppdrag</div>
+        <div class="sideButton" onclick="kontaktInfo()">Kontakt info</div>
+        <div class="sideButton" onclick="kvalifikiasjoner()">Kvalifikiasjoner</div>
+        <div class="sideButton" onclick="sertifiseringer()">Sertifiseringer</div>
+        <div class="sideButton" onclick="bio()">Bio</div>
+        <div class="sideButton" onclick="rediger()">Rediger</div>
+        <div class="sideButton" onclick="oppdrag()">Oppdrag</div>
     </div>
     `;
 }

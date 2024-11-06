@@ -114,7 +114,20 @@ function rediger(){
     
     if (index !== -1) {
         model.app.inView =/*html*/ `
-
+        <div>${user[index].picture}</div>
+        <div>${user[index].fname}</div>
+        <div>${user[index].lname}</div>
+        <div>${user[index].email}</div>
+        <div>${user[index].age}</div>
+        <div>${user[index].place}</div>
+        <div>${user[index].phone}</div>
+        <div>${user[index].gender}</div>
+        <div>${user[index].ethnicity}</div>
+        <div>${user[index].interest}</div>
+        <div>${user[index].mission}</div>
+        <div>${user[index].travel}</div>
+        <div>${user[index].info}</div>
+        <div>${user[index].driverLicence}</div>
         `
 
     }
@@ -124,20 +137,29 @@ function rediger(){
 
 function oppdrag(){
     const user = model.data.users.usr
-    let html = '';
+    model.app.inView = '';
     
     const idOfUsr = model.app.usrId;
     const index = model.data.users.usr.findIndex((usr) => usr.id === idOfUsr);
     
     if (index !== -1) {
-        model.app.inView =/*html*/ `
-        <div>${user[index].mission}</div>
+        for (let i = 0; i < model.data.users.usr[index].mission.length; i++){
+        model.app.inView +=/*html*/ `
+        <div>${user[index].mission[i].missionStatus}</div>
         <div>${user[index].travel}</div>
+        <button onclick="model.data.users.usr[model.data.users.usr.findIndex((usr) => usr.id === model.app.usrId)].mission[${i}].missionStatus = 'Aksepter', oppdrag()">Aksepter</button>
+        <button onclick="model.data.users.usr[model.data.users.usr.findIndex((usr) => usr.id === model.app.usrId)].mission[${i}].missionStatus = 'Avslått', oppdrag()">Avslått</button>
         `
-
+        console.log(index)
+        console.log(i)
+    }
     }
     updateView();
 }
+
+
+
+
 
         
         
