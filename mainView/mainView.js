@@ -1,6 +1,5 @@
 function mainView() {
     model.app.inView = /*HTML*/ `
-    <button onclick="profileView()">Bruker sin side</button>
     <div class="header">
         <h2>Bli en støttekontakt med <b>Lysglimt</b> – gjør en forskjell i andres liv</h2>
     </div>
@@ -31,7 +30,7 @@ function mainView() {
         </p> 
             
     </div>
-    <button onclick="adminView()">admin</button>
+
     <div onclick="creatAccountView()" class="footer">Registrer Deg Nå!</div>
 
 `;
