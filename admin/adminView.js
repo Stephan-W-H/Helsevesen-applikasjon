@@ -31,7 +31,7 @@ function adminViewDispInfo() {
                     <li>ID: ${model.data.users.usr[model.app.index].id}</li>
                     <li>Navn: ${model.data.users.usr[model.app.index].fname}</li>
                     <li>Telefon: ${model.data.users.usr[model.app.index].phone}</li>
-                    <li>Setd: ${model.data.users.usr[model.app.index].place}</li>
+                    <li>Sted: ${model.data.users.usr[model.app.index].place}</li>
                 </ul>
             </div>
             <hr>
