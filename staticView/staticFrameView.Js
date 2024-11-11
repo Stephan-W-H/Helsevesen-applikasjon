@@ -12,6 +12,7 @@ function updateView() {
             </div>
             <div class="profileHeaderText">${model.app.profileHeaderText}</div>
             <div onclick=" checkIfLoggedIn()" class="headerBtn">${model.app.loginBtnText}</div>
+            
         </header>
         
         <article class="main">${model.app.inView}</article>
@@ -47,6 +48,7 @@ function pageSwitch() {
     if(model.app.leftSideMenu != '') { model.app.leftSideMenu = ''}
     if(model.app.header != '') {model.app.header = ''}
     if(model.app.footer != '') {model.app.footer = ''}
+    
     switch (model.app.page) {
         case "mainView":
             mainView();

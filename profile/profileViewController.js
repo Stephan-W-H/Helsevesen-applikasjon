@@ -141,6 +141,7 @@ function oppdrag() {
         <div>${user[index].travel}</div>
         <button onclick="model.data.users.usr[model.data.users.usr.findIndex((usr) => usr.id === model.app.usrId)].mission[${i}].missionStatus = 'Aksepter', oppdrag()">Aksepter</button>
         <button onclick="model.data.users.usr[model.data.users.usr.findIndex((usr) => usr.id === model.app.usrId)].mission[${i}].missionStatus = 'Avslått', oppdrag()">Avslått</button>
+        <button onclick="model.data.users.usr[model.data.users.usr.findIndex((usr) => usr.id === model.app.usrId)].mission[${i}].missionStatus = 'Fullført', oppdrag()">Fullført</button>
         `;
             console.log(index);
             console.log(i);

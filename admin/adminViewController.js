@@ -39,5 +39,10 @@ function missionIndicator()
             <p>Pasient: ${model.data.users.usr[model.app.index].mission[i].patientId}<p>
             Status:</br> ${model.data.users.usr[model.app.index].mission[i].missionStatus} 
             <div class="missionStatus" style="background-color: red;"></div>`}
+    else if(model.data.users.usr[model.app.index].mission[i].missionStatus == 'Fullført')
+        {html += `
+            <p>Pasient: ${model.data.users.usr[model.app.index].mission[i].patientId}<p>
+            Status:</br> ${model.data.users.usr[model.app.index].mission[i].missionStatus} 
+            <div class="missionStatus" style="background-color: black;"></div>`}
     return html
 }
