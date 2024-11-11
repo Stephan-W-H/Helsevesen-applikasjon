@@ -20,7 +20,7 @@ function adminView() {
 }
 
 function adminViewDispInfo() {
-    let html;
+    let html = '';
     for (let i = 0; i < model.data.users.usr.length; i++) {
         model.app.index = i;
         html += `
