@@ -30,9 +30,10 @@ function printReslut()
     let print = ''
     for(let i = 0; i< model.input.searchResult.length; i++)
     {
-        print += `        <div id="adminSearcResult" class="adminSearcResult" onclick="adminStoreUsrData(${i})">
+        model.app.index = i
+        print += `        <div id="adminSearcResult" class="adminSearcResult" onclick="adminStoreUsrDataSearchResult(${i})">
             <div>
-                <img src="${model.data.users.usr[i].picture}" id="adminSearchImg" class="adminSearchImg" onclick="adminStoreUsrData(${i})">
+                <img src="${model.input.searchResult[i].picture}" id="adminSearchImg" class="adminSearchImg" onclick="adminStoreUsrData(${i})">
                 <ul>
                     <li>ID: ${p[i].id}</li>
                     <li>Navn: ${p[i].fname}</li>
@@ -43,7 +44,7 @@ function printReslut()
             <hr>
             <div id="adminUsrBio" class="adminUsrBio">
                 <p>Info: ${p[i].info}</p>
-                <p>Status: ${p[i].missionStatus}</p>
+                <p>Status: ${missionIndicatorForSearch()}</p>
             </div>
         </div>
         <hr><br>`
@@ -51,4 +52,47 @@ function printReslut()
     return print
 }
 
+function missionIndicatorForSearch()
+{let html = ''
+    for(let i = 0; i < model.input.searchResult[model.app.index].mission.length; i++)
+    if(model.input.searchResult[model.app.index].mission[i].missionStatus == 'Akseptert')
+        {html += `
+            <p>Pasient: ${model.input.searchResult[model.app.index].mission[i].patientId}<p>
+            Status:</br> ${model.input.searchResult[model.app.index].mission[i].missionStatus} 
+            <div class="missionStatus" style="background-color: green"></div>` }
+    else if (model.input.searchResult[model.app.index].mission[i].missionStatus == 'Tildelt') 
+        {html += `
+            <p>Pasient: ${model.input.searchResult[model.app.index].mission[i].patientId}<p>
+            Status:</br> ${model.input.searchResult[model.app.index].mission[i].missionStatus} 
+            <div class="missionStatus" style="background-color: yellow"></div>` }
+    else if(model.input.searchResult[model.app.index].mission[i].missionStatus == 'Avslått')
+        {html += `
+            <p>Pasient: ${model.input.searchResult[model.app.index].mission[i].patientId}<p>
+            Status:</br> ${model.input.searchResult[model.app.index].mission[i].missionStatus} 
+            <div class="missionStatus" style="background-color: red;"></div>`}
+    else if(model.input.searchResult[model.app.index].mission[i].missionStatus == 'Fullført')
+        {html += `
+            <p>Pasient: ${model.input.searchResult[model.app.index].mission[i].patientId}<p>
+            Status:</br> ${model.input.searchResult[model.app.index].mission[i].missionStatus} 
+            <div class="missionStatus" style="background-color: black;"></div>`}
+    return html
+}
+
+function adminStoreUsrDataSearchResult(storedData) {
+    // Store usr data in adminSeconPage (temp storage)
+    model.app.index = storedData
+    model.data.users.adminSeconPage = {
+        ...model.input.searchResult[storedData], // ... aka spread operator to copy form one array to another
+        note: {
+            noteId: model.input.searchResult[storedData].note?.noteId || [],
+            adminUsername:
+            model.input.searchResult[storedData].note?.adminUsername || [],
+            noteText: model.input.searchResult[storedData].note?.noteText || [],
+        },
+    };
+
+    model.input.adminInPut.selectedUsrId = model.data.users.adminSeconPage.id;
+    model.app.page = "adminSecondPage";
+    pageSwitch();
+}
 
